@@ -1,1 +1,2 @@
-# myNote
+# notenonote
+[note](https://note.com/yusaku)
