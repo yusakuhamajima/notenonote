@@ -1,19 +1,37 @@
 body {
-  background-color: #2cb696;
+  background-color: #011627;
+  color: #facf5a;
 }
 
 header {
-  color: #ffffff;
+  color: #facf5a;
+}
+
+nav {
+  list-style: none;
+  float: left;
 }
 
 main {
   padding: 5px;
 }
 
-h2 {
+h2,
+h3 {
   font-size: 16px;
+  color: #facf5a;
 }
 
 #canvas {
   text-align: center;
+}
+
+a:link {
+  color: #ffffff;
+}
+a:visited {
+  color: #ffffff;
+}
+a:hover {
+  color: #facf5a;
 }
