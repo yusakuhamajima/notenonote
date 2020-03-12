@@ -2,14 +2,14 @@
       margin: 0;
       padding: 0;
       background-color: #19B2FF;
+      font-family: 'Bellota Text', cursive;
+      font-family: 'Quicksand', sans-serif;
     }
     
     header {
       background-color: #19B2FF;
       color: aliceblue;
       padding: 0 1em;
-      font-family: 'Bellota Text', cursive;
-      font-family: 'Quicksand', sans-serif;
     }
   
 
