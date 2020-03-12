@@ -8,12 +8,10 @@
       background-color: #19B2FF;
       color: aliceblue;
       padding: 0 1em;
-    }
-    
-    .title_notenonote{
       font-family: 'Bellota Text', cursive;
-      /* font-family: 'Quicksand', sans-serif; */
+      font-family: 'Quicksand', sans-serif;
     }
+  
 
     main{
       /* background-color: aliceblue; */
