@@ -2,6 +2,15 @@
 <html lang="ja">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76272601-12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-76272601-12');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10weeks2020</title>
@@ -19,18 +28,22 @@
 
 <body>
     <header>
-        <h1>playlist 2020</h1>
+        <h1>playlist/2020/</h1>
+        <nav>
+            <script src="../../js/nav_3.js"></script>
+        </nav>
     </header>
     <main>
-        <img src="../../images/10weeks2020.png" alt="" width="100%">
         <h2>10weeks2020</h2>
+        <img src="../../images/10weeks2020.png" alt="" width="100%">
+        <h3>New</h3>
         <div class="list">
             <script src="../data/archive_list_2020.js"></script>
             <script src="../js/weeks_number.js"></script>
             <script>
                 document.write('<ul>');
 
-                var plylsweeks = playlists[10];
+                var plylsweeks = playlists[9];
                 for (let i = 0; i < plylsweeks['tracks'].length; i++) {
                     var num = i + 1;
                     document.write('<li>' + num + '. ' + plylsweeks['tracks'][i]['title'] + ' | ' + plylsweeks['tracks'][i]['artist'] + '</li>');

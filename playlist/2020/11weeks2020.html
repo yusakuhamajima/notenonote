@@ -2,6 +2,15 @@
 <html lang="ja">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76272601-12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-76272601-12');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>11weeks2020</title>
@@ -14,6 +23,23 @@
             color: #ffffff;
             list-style-type: none
         }
+
+        .movie-wrap {
+            position: relative;
+            padding-bottom: 56.25%;
+            /*アスペクト比 16:9の場合の縦幅*/
+            height: 0;
+            overflow: hidden;
+        }
+
+        .movie-wrap iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0.5em;
+        }
     </style>
 </head>
 
@@ -25,9 +51,9 @@
         </nav>
     </header>
     <main>
+        <h2>11weeks</h2>
         <img src="../../images/11weeks2020.png" alt="" width="100%">
-        <h2>playlist 2020</h2>
-        <h3>11weeks</h3>
+        <h3>New</h3>
         <div class="list">
             <script src="../data/archive_list_2020.js"></script>
             <script>
@@ -41,6 +67,16 @@
 
                 document.write('</ul>');
             </script>
+        </div>
+        <div class="movie-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yMJHQPCMBs4" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="movie-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x7Kp2zHK0TQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </main>
     <footer>
