@@ -4,31 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10weeks2020</title>
+    <title>11weeks2020</title>
     <link rel="stylesheet" href="../../css/main.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
         rel="stylesheet">
+    <style>
+        .list li {
+            color: #ffffff;
+            list-style-type: none
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>playlist 2020</h1>
+        <h1>playlist/2020/</h1>
+        <nav>
+            <script src="../../js/nav_3.js"></script>
+        </nav>
     </header>
     <main>
-        <img src="../../images/10weeks2020.png" alt="" width="100%">
-        <!-- <h2>10weeks2020</h2> -->
-        <div>
+        <img src="../../images/11weeks2020.png" alt="" width="100%">
+        <h2>playlist 2020</h2>
+        <h3>11weeks</h3>
+        <div class="list">
             <script src="../data/archive_list_2020.js"></script>
-            <script src="../js/weeks_number.js"></script>
             <script>
-                let catchcopy = "<h2>" + weekno + "weeks" + "</h2>";
-                document.write(catchcopy);
-
                 document.write('<ul>');
 
-                var plylsweeks = playlists[weekno - 1];
-                console.log(plylsweeks);
+                var plylsweeks = playlists[10];
                 for (let i = 0; i < plylsweeks['tracks'].length; i++) {
                     var num = i + 1;
                     document.write('<li>' + num + '. ' + plylsweeks['tracks'][i]['title'] + ' | ' + plylsweeks['tracks'][i]['artist'] + '</li>');
@@ -39,7 +44,6 @@
         </div>
     </main>
     <footer>
-        <h3>footer menu</h3>
         <ul>
             <li><a href="../../index.html">home</a></li>
             <li><a href="../index.html">all tracks 2020</a></li>

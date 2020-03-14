@@ -2,8 +2,7 @@
       margin: 0;
       padding: 0;
       background-color: #19B2FF;
-      font-family: 'Bellota Text', cursive;
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Baloo Thambi 2', cursive;
     }
     
     header {
@@ -11,9 +10,14 @@
       color: aliceblue;
       padding: 0 1em;
     }
-  
+    
     main{
       padding: 1em;
+    }
+    
+    main div blockquote{
+      font-family: 'Noto Serif JP', serif;
+      color: lavenderblush;
     }
 
     footer{
