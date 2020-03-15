@@ -38,6 +38,13 @@
       font-size: 1em;
     }
 
+    h4 {
+      background-color: #19B2FF;
+      padding: 0.1em 0.5em;
+      color: #ffffff;
+      font-size: 1em;
+    }
+
     a:visited{
       color: #FFFF32;
     }
