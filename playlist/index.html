@@ -12,11 +12,10 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-TRB39DD');</script>
   <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>playlist | notenonote</title>
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/playlist.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playlist | notenonote</title>
+  <link rel="stylesheet" href="../css/main.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
     rel="stylesheet">
@@ -35,26 +34,21 @@
   </header>
   <main>
     <h2>playlist /</h2>
-
-    <script src="./data/archive_list_2020.js"></script>
-    <script src="./js/weeks_number.js"></script>
-    <div class="list">
-      <script>
-        for (let w = 0; w < playlists.length; w++) {
-          document.write('<h3>' + playlists[w]['weeks'] + 'weeks' + '</h3>');
-          var plylsweeks = playlists[w];
-          document.write('<ul>');
-          for (let i = 0; i < plylsweeks['tracks'].length; i++) {
-            var num = i + 1;
-            document.write('<li>' + num + '. ' + plylsweeks['tracks'][i]['title'] + ' | ' + plylsweeks['tracks'][i]['artist'] + '</li>');
-          }
-          document.write('</ul>');
-        }
-      </script>
+    <div class='playlist'>
+      <h3>11weeks</h3>
+      <a href="./2020/11weeks2020.html"><img src="../images/11weeks2020.png" alt="" width='100%'></a>
+    </div>
+    <div class='playlist'>
+      <h3>10weeks</h3>
+      <a href="./2020/10weeks2020.html"><img src="../images/10weeks2020.png" alt="" width='100%'></a>
+    </div>
+    <div class="playlist">
+      <h3>9weeks</h3>
+      <a href="./2020/09weeks2020.html"><img src="../images/09weeks2020_2.png" alt="" width='100%'></a>
     </div>
   </main>
   <footer>
-    <script src="../js/nav_2.js"></script>
+    <script src="./js/nav.js"></script>
   </footer>
 </body>
 
