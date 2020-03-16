@@ -26,6 +26,6 @@ function setup() {
     fill(c_text);
     textFont(myfont);
     textSize(40);
-    var str = '11weeks2020';
+    var str = 'cc-004';
     text(str, 40, 80);
 }

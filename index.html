@@ -50,16 +50,16 @@
         background(200, 90, 100, 100);
         noStroke();
 
-        // yosumi rect
-        // rect(0, 90, 10, 10);
-        // rect(330, 0, 10, 10);
-        rect(330, 90, 10, 10);
+        // rect
+        for (let i = 0; i < 10; i++) {
+          rect(random(0, width), random(0, height), 10, 10);
+        }
 
         // gara
         fill(200, 0, 100, 100);
         textSize(20);
-        text('visual', 90, 80);
-        text('playlist', 180, 30);
+        text('visual', 90, random(10, 90));
+        text('playlist', 180, random(10, 90));
       }
 
       function draw() {
