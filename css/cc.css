@@ -6,9 +6,13 @@ code{
     color: yellow;
 }
 
+pre{
+    white-space:pre-wrap;
+}
+
 .p5js-wrap {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
