@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76272601-12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-76272601-12');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cc-005 | notenonote</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cc.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="../p5/p5.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>notenonote</h1>
+        <nav>
+            <script src="../js/nav_2.js"></script>
+        </nav>
+    </header>
+    <main>
+        <h2>creative coding /</h2>
+        <div>
+            <h3>cc-005</h3>
+            <div class="p5js-wrap">
+                <div id="canvas"></div>
+            </div>
+        </div>
+        <div>
+            <pre><code>
+                var myfont;
+                
+                function preload() {
+                myfont = loadFont
+                ('./font/Spartan/static/Spartan-Light.ttf');
+                }
+                
+                function setup() {
+                var canvas = createCanvas(640, 335, WEBGL);
+                canvas.parent('canvas');
+                colorMode(HSB, 360, 100, 100, 100);
+                background(265, 95, 65, 100);
+                
+                // box
+                push();
+                strokeWeight(0.3);
+                for (let i = 0; i < 30; i++) 
+                { 
+                    fill(329, 73, 100, random(5, 95)); 
+                    rotateX(i * 12); rotateY(i * 12); 
+                    rotateZ(i * 12);
+                    box(150); 
+                } 
+                pop(); 
+                    
+                //text 
+                translate(0, 0); 
+                fill(200, 100, 100, 100); 
+                textFont(myfont); 
+                textSize(32); 
+                text('cc-005',0, 30); 
+                }
+            </code></pre>
+        </div>
+    </main>
+    <footer>
+        <script src="../js/nav_2.js"></script>
+    </footer>
+    <script src="./p5js/cc-005.js"></script>
+</body>
+
+</html>
