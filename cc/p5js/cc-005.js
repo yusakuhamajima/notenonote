@@ -23,11 +23,11 @@ function setup() {
     pop();
 
     //text
-    translate(0, 0);
-    fill(200, 100, 100, 100);
+    translate(-300, -110);
+    fill(329, 73, 100, 100);
     textFont(myfont);
     textSize(32);
-    text('cc-005', 0, 30);
+    text('cc-005', 0, 0);
 }
 
 function keyPressed() {

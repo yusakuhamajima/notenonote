@@ -174,5 +174,23 @@ var playlists = [
             { title: 'Lory', artist: 'Polynation' },
             { title: 'Temple Deadbeat', artist: 'Bit Cloudy' }
         ]
-    }
+    },
+    {
+        weeks: 12, tracks: [
+            { title: 'ほんとは feat.Kan Sano', artist: 'Shin Sakiura' },
+            { title: 'Be Mine Tonight(feat.Delafleur)', artist: 'Breakbot' },
+            { title: 'WAKING UP DOWN', artist: 'Yaeji' },
+            { title: 'Groovin\'(feat.Yung Bae)', artist: 'Flamingosis' },
+            { title: 'Purple(Bonus For Sho)', artist: 'minthaze' },
+            { title: 'Sector V', artist: 'Marcus D' },
+            { title: 'Security Glass Film', artist: 'NxxxxxS' },
+            { title: 'Space Pud', artist: 'APO ザ·犬 。 & HM Surf' },
+            { title: 'The Well - Tempered Clavier, Book I: Prelude No. 1 in C Major, BWV 846', artist: 'Daniel Barenboim' },
+            { title: 'All the Ladies', artist: 'Fatboy Slim & Eats Everything' },
+            { title: 'Landslide', artist: 'KEN ISHII' },
+            { title: 'Lotus(Dub)', artist: 'DUBFIRE, Kate Elsworth & Carl Craig' },
+            { title: 'rho2', artist: 'Rei Harakami' },
+            { title: 'ZIG ZAG feat.BIM', artist: '木村カエラ' }
+        ]
+    },
 ]
