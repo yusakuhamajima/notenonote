@@ -1,44 +1,44 @@
 /* color set 1 */
 .color_set1_red {
-  background-color: #ff5959;
-  padding: 10px;
-  /* hsb 0-65-100 */
+	background-color: #ff5959;
+	padding: 10px;
+	/* hsb 0-65-100 */
 }
 .color_set1_yellow {
-  background-color: #facf5a;
-  padding: 10px;
-  /* hsb 43-64-98 */
+	background-color: #facf5a;
+	padding: 10px;
+	/* hsb 43-64-98 */
 }
 .color_set1_green {
-  background-color: #49beb7;
-  padding: 10px;
-  /* hsb 176-61-74 */
+	background-color: #49beb7;
+	padding: 10px;
+	/* hsb 176-61-74 */
 }
 .color_set1_deepgreen {
-  background-color: #085f63;
-  padding: 10px;
-  /* hsb 182-91-38 */
+	background-color: #085f63;
+	padding: 10px;
+	/* hsb 182-91-38 */
 }
 .color_set1_honeydew {
-  background-color: #f0fff0;
-  padding: 10px;
-  /* hsb 120-5-100 */
+	background-color: #f0fff0;
+	padding: 10px;
+	/* hsb 120-5-100 */
 }
 
 /* color set 2 */
 .color_set2_black {
-  background-color: #011627;
-  color: #fdfffc;
+	background-color: #011627;
+	color: #fdfffc;
 }
 .color_set2_white {
-  background-color: #fdfffc;
+	background-color: #fdfffc;
 }
 .color_set2_green {
-  background-color: #2ec4b6;
+	background-color: #2ec4b6;
 }
 .color_set2_red {
-  background-color: #e71d36;
+	background-color: #e71d36;
 }
 .color_set2_yellow {
-  background-color: #fec805;
+	background-color: #fec805;
 }

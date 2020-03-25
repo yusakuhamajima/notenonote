@@ -1,35 +1,35 @@
 /* flex */
 .flexcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid #ddd;
-  padding: 0.4em;
-  margin: 0 0 2em;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #ddd;
+	padding: 0.4em;
+	margin: 0 0 2em;
 }
 
 .flexcontainer > div {
-  padding: 1em;
-  flex: 1 0 300px;
-  margin: 0.4em;
+	padding: 1em;
+	flex: 1 0 300px;
+	margin: 0.4em;
 }
 /* color */
 .color_bg_red {
-  background-color: #ff5959;
-  padding: 10px;
-  /* hsb 0-65-100 */
+	background-color: #ff5959;
+	padding: 10px;
+	/* hsb 0-65-100 */
 }
 .color_bg_yellow {
-  background-color: #facf5a;
-  padding: 10px;
-  /* hsb 43-64-98 */
+	background-color: #facf5a;
+	padding: 10px;
+	/* hsb 43-64-98 */
 }
 .color_bg_green {
-  background-color: #49beb7;
-  padding: 10px;
-  /* hsb 176-61-74 */
+	background-color: #49beb7;
+	padding: 10px;
+	/* hsb 176-61-74 */
 }
 .color_bg_deepgreen {
-  background-color: #085f63;
-  padding: 10px;
-  /* hsb 182-91-38 */
+	background-color: #085f63;
+	padding: 10px;
+	/* hsb 182-91-38 */
 }

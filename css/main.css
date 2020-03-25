@@ -1,50 +1,50 @@
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #19B2FF;
-      font-family: 'Baloo Thambi 2', cursive;
-    }
-    
-    header {
-      background-color: #19B2FF;
-      color: aliceblue;
-      padding: 0 1em;
-    }
-    
-    main{
-      padding: 1em;
-    }
-    
-    main div blockquote{
-      font-family: 'Noto Serif JP', serif;
-      color: lavenderblush;
-    }
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #19b2ff;
+	font-family: "Baloo Thambi 2", cursive;
+}
 
-    footer{
-      padding: 1em;
-    }
+header {
+	background-color: #19b2ff;
+	color: aliceblue;
+	padding: 0 1em;
+}
 
-    h2 {
-      background-color: #19B2FF;
-      padding: 0.1em 0.5em;
-      color: #ffffff;
-      font-size: 1.2em;
-    }
+main {
+	padding: 1em;
+}
 
-    h3 {
-      background-color: #19B2FF;
-      padding: 0.1em 0.5em;
-      color: #ffffff;
-      font-size: 1em;
-    }
+main div blockquote {
+	font-family: "Noto Serif JP", serif;
+	color: lavenderblush;
+}
 
-    h4 {
-      background-color: #19B2FF;
-      padding: 0.1em 0.5em;
-      color: #ffffff;
-      font-size: 1em;
-    }
+footer {
+	padding: 1em;
+}
 
-    a:visited{
-      color: #FFFF32;
-    }
+h2 {
+	background-color: #19b2ff;
+	padding: 0.1em 0.5em;
+	color: #ffffff;
+	font-size: 1.2em;
+}
+
+h3 {
+	background-color: #19b2ff;
+	padding: 0.1em 0.5em;
+	color: #ffffff;
+	font-size: 1em;
+}
+
+h4 {
+	background-color: #19b2ff;
+	padding: 0.1em 0.5em;
+	color: #ffffff;
+	font-size: 1em;
+}
+
+a:visited {
+	color: #ffff32;
+}

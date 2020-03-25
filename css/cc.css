@@ -1,10 +1,10 @@
-pre{
-    background-color: #ffffff;
+pre {
+	background-color: #ffffff;
 }
 
-.p5js-wrap {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
+div.p5js-wrap {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
 }
