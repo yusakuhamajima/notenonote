@@ -1,6 +1,3 @@
-// 500×312px
-// noteの記事見出し画像サイズ 1280×670px（半分は640×335px）
-
 var w_canvas, h_canvas;
 w_canvas = 1280 / 2;
 h_canvas = 670 / 2;
