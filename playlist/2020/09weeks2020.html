@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<!-- Google Tag Manager -->
+		<script>
+			(function(w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js"
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TRB39DD");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>09weeks2020 | notenonote</title>
+		<link rel="stylesheet" href="../../css/main.css" />
+		<link rel="stylesheet" href="../../css/playlist.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TRB39DD');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>09weeks2020 | notenonote</title>
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/playlist.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
-        rel="stylesheet">
-</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-TRB39DD"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<h1>notenonote</h1>
+			<nav>
+				<script src="../../js/nav_3.js"></script>
+			</nav>
+		</header>
+		<main>
+			<h2>playlist / 2020 /</h2>
+			<h3>09weeks</h3>
+			<img
+				src="../../images/09weeks2020_2.png"
+				alt=""
+				width="640"
+				height="335"
+			/>
+			<h4>New</h4>
+			<div class="list">
+				<script src="../data/archive_list_2020.js"></script>
+				<script src="../js/weeks_number.js"></script>
+				<script>
+					document.write("<ul>");
 
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRB39DD" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <h1>notenonote</h1>
-        <nav>
-            <script src="../../js/nav_3.js"></script>
-        </nav>
-    </header>
-    <main>
-        <h2>playlist / 2020 /</h2>
-        <h3>09weeks</h3>
-        <img src="../../images/09weeks2020_2.png" alt="" width="100%">
-        <h4>New</h4>
-        <div class="list">
-            <script src="../data/archive_list_2020.js"></script>
-            <script src="../js/weeks_number.js"></script>
-            <script>
-                document.write('<ul>');
+					var plylsweeks = playlists[8];
+					for (let i = 0; i < plylsweeks["tracks"].length; i++) {
+						var num = i + 1;
+						document.write(
+							"<li>" +
+								num +
+								". " +
+								plylsweeks["tracks"][i]["title"] +
+								" | " +
+								plylsweeks["tracks"][i]["artist"] +
+								"</li>"
+						);
+					}
 
-                var plylsweeks = playlists[8];
-                for (let i = 0; i < plylsweeks['tracks'].length; i++) {
-                    var num = i + 1;
-                    document.write('<li>' + num + '. ' + plylsweeks['tracks'][i]['title'] + ' | ' + plylsweeks['tracks'][i]['artist'] + '</li>');
-                }
+					document.write("</ul>");
+				</script>
+			</div>
 
-                document.write('</ul>');
-            </script>
-        </div>
+			<!-- weekly playlist -->
+			<div class="weekly-playlist-nav">
+				<h3>weekly playlist</h3>
+				<nav>
+					<script src="../../js/weekly-playlist-nav.js"></script>
+				</nav>
+			</div>
 
-        <!-- weekly playlist -->
-        <div class="weekly-playlist-nav">
-            <h3>weekly playlist</h3>
-            <nav>
-                <script src="../../js/weekly-playlist-nav.js"></script>
-            </nav>
-        </div>
-
-        <!-- youtube -->
-        <div class="movie-wrap">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2eYLK0ZNE7U" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </main>
-    <footer>
-        <ul>
-            <li><a href="../../index.html">home</a></li>
-            <li><a href="../index.html">all tracks 2020</a></li>
-        </ul>
-    </footer>
-</body>
-
+			<!-- youtube -->
+			<div class="movie-wrap">
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/2eYLK0ZNE7U"
+					frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li><a href="../../index.html">home</a></li>
+				<li><a href="../index.html">all tracks 2020</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
