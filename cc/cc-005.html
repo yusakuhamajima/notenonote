@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-76272601-12"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76272601-12"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+			gtag("config", "UA-76272601-12");
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>cc-005 | notenonote</title>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/cc.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="../p5/p5.min.js"></script>
+	</head>
 
-        gtag('config', 'UA-76272601-12');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cc-005 | notenonote</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/cc.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
-        rel="stylesheet">
-    <script src="../p5/p5.min.js"></script>
-</head>
-
-<body>
-    <header>
-        <h1>notenonote</h1>
-        <nav>
-            <script src="../js/nav_2.js"></script>
-        </nav>
-    </header>
-    <main>
-        <h2>creative coding /</h2>
-        <div>
-            <h3>cc-005</h3>
-            <div class="p5js-wrap">
-                <div id="canvas"></div>
-            </div>
-        </div>
-        <div>
-            <pre><code>
+	<body>
+		<header>
+			<h1>notenonote</h1>
+			<nav>
+				<script src="../js/nav_2.js"></script>
+			</nav>
+		</header>
+		<main>
+			<h2>creative coding /</h2>
+			<div>
+				<h3>cc-005</h3>
+				<div class="p5js-wrap">
+					<div id="canvas"></div>
+				</div>
+			</div>
+			<div>
+				<pre><code>
                 var myfont;
                 
                 function preload() {
@@ -71,12 +76,11 @@
                 text('cc-005',0, 30); 
                 }
             </code></pre>
-        </div>
-    </main>
-    <footer>
-        <script src="../js/nav_2.js"></script>
-    </footer>
-    <script src="./p5js/cc-005.js"></script>
-</body>
-
+			</div>
+		</main>
+		<footer>
+			<script src="../js/cc-list-nav.js"></script>
+		</footer>
+		<script src="./p5js/cc-005.js"></script>
+	</body>
 </html>

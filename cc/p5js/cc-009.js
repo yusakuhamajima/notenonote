@@ -11,16 +11,16 @@ function setup() {
 	var canvas = createCanvas(w_canvas, h_canvas, P2D);
 	canvas.parent("canvas");
 	colorMode(HSB, 360, 100, 100, 100);
-	background(268, 94, 60, 100);
+	background(215, 86, 47, 100);
 
 	noLoop();
 	for (i = 0; i < w_canvas; i += 0.03) {
 		var randomHeight = noise(i * 0.02) * h_canvas;
-		stroke(62, 71, 94, 100);
+		stroke(352, 91, 92, 100);
 		point(i, randomHeight);
-		stroke(299, 81, 87, 100);
+		stroke(29, 85, 96, 100);
 		point(i, random(h_canvas, randomHeight));
-		stroke(235, 77, 86, 100);
+		stroke(200, 96, 93, 100);
 		point(i, random(0, randomHeight));
 	}
 
@@ -33,6 +33,6 @@ function setup() {
 
 function keyPressed() {
 	if (key === "s") {
-		saveCanvas("cc-008", "png");
+		saveCanvas("cc-009", "png");
 	}
 }

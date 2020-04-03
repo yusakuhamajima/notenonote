@@ -44,29 +44,45 @@
 			</div>
 			<div>
 				<ul>
-					<li>font: Spartan-Light</li>
-					<li>colorMode: HSB</li>
-					<li>color1:###</li>
-					<li>color2:###</li>
+					<li>color-002</li>
+					<li>
+						noise (
+						<a href="https://p5js.org/reference/#/p5/noise"
+							>p5js.org reference</a
+						>
+						)
+					</li>
 				</ul>
 			</div>
 			<div>
 				<pre class="prettyprint lang-js">
                 <code>
-                var myfont;
-                
-                function preload() {
-                myfont = 
-                loadFont('Spartan-Light.ttf');
-                }
-                
-                function setup() {}
+				var w_canvas, h_canvas;
+				w_canvas = 1280 / 2;
+				h_canvas = 670 / 2;
+				
+				function setup() {
+				var canvas = createCanvas(w_canvas, h_canvas, P2D);
+				canvas.parent("canvas");
+				colorMode(HSB, 360, 100, 100, 100);
+				background(268, 94, 60, 100);
+				
+				noLoop();
+				for (i = 0; i < w_canvas; i +=0.03) {
+					var randomHeight=noise(i * 0.02) * h_canvas;
+					stroke(62, 71, 94, 100); 
+					point(i,randomHeight); 
+					stroke(299, 81, 87, 100); 
+					point(i, random(h_canvas, randomHeight)); 
+					stroke(235, 77, 86, 100);
+					point(i, random(0, randomHeight)); 
+				} 
                 </code>
             </pre>
 			</div>
 		</main>
 		<footer>
-			<script src="../js/nav_2.js"></script>
+			<script src="../js/cc-list-nav.js"></script>
 		</footer>
 		<script src="./p5js/cc-008.js"></script>
 	</body>

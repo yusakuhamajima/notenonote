@@ -2,12 +2,12 @@ var w_canvas, h_canvas;
 w_canvas = 1280 / 2;
 h_canvas = 670 / 2;
 var w;
-var myfont,
-	fontsize = 40;
+// var myfont,
+// 	fontsize = 40;
 
-function preload() {
-	myfont = loadFont("./font/Spartan/static/Spartan-Light.ttf");
-}
+// function preload() {
+// 	myfont = loadFont("./font/Spartan/static/Spartan-Light.ttf");
+// }
 
 function setup() {
 	var canvas = createCanvas(w_canvas, h_canvas, WEBGL);
@@ -16,10 +16,10 @@ function setup() {
 	background(265, 95, 65, 100);
 
 	// text
-	fill(329, 73, 100, 90);
-	textFont(myfont);
-	textSize(40);
-	text("cc-007", -290, -100);
+	// fill(329, 73, 100, 90);
+	// textFont(myfont);
+	// textSize(40);
+	// text("cc-007", -290, -100);
 
 	strokeWeight(0.3);
 	for (let i = 1; i <= 30; i++) {
