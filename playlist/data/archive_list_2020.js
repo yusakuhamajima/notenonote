@@ -11,28 +11,28 @@ var playlists = [
 			{ title: "Calmly", artist: "Dye O" },
 			{
 				title: "Infinity (Instrumental Version) feat. SLCT (Slct Remix)",
-				artist: "Bluma Petersen"
+				artist: "Bluma Petersen",
 			},
 			{
 				title: "Glass and Plastic (Instrumental Version)",
-				artist: "Particle House"
+				artist: "Particle House",
 			},
 			{ title: "The Sky and What Is Under It", artist: "Brookii" },
 			{ title: "Sleep Online", artist: "Barbatula" },
 			{ title: "Benji", artist: "Soul Flower" },
-			{ title: "Maple Leaf", artist: "Philanthrope" }
-		]
+			{ title: "Maple Leaf", artist: "Philanthrope" },
+		],
 	},
 	{
 		weeks: 2,
 		tracks: [
 			{
 				title: "Don't Let Me Be (feat. Owlle) Brozeur Remix",
-				artist: "Cassius"
+				artist: "Cassius",
 			},
 			{
 				title: "Let Forever Be(The Secret Psychedelic Mix)",
-				artist: "The Chemical Brothers"
+				artist: "The Chemical Brothers",
 			},
 			{ title: "Positive(Wau Funk Remix)", artist: "Hot Chip" },
 			{ title: "Departure", artist: "SUKISHA × kiki vivi lily" },
@@ -46,8 +46,8 @@ var playlists = [
 			{ title: "Rule of Thirds", artist: "Sweeps" },
 			{ title: "Pastels 2", artist: "Mayaewk & Honshu Lo fi" },
 			{ title: "So Long", artist: "Smoke Trees & Ricardo Schneider" },
-			{ title: "東京は夜の七時", artist: "PIZZICATO FIVE" }
-		]
+			{ title: "東京は夜の七時", artist: "PIZZICATO FIVE" },
+		],
 	},
 	{
 		weeks: 3,
@@ -57,7 +57,7 @@ var playlists = [
 			{ title: "with U feat.eill,PARKGOLF", artist: "GANMI" },
 			{
 				title: "Genuine Draft (Shakin Bass Mix) feat. Cassius",
-				artist: "T.T. Hacky"
+				artist: "T.T. Hacky",
 			},
 			{ title: "Karru", artist: "FloFilz" },
 			{ title: "Fanatic (Instrumental)", artist: "Funky DL" },
@@ -65,8 +65,8 @@ var playlists = [
 			{ title: "5:30AM", artist: "slom" },
 			{ title: "Anyone", artist: "luvwn & Okyto" },
 			{ title: "Dwell", artist: "Aru-2" },
-			{ title: "Late Nights", artist: "Xfruge" }
-		]
+			{ title: "Late Nights", artist: "Xfruge" },
+		],
 	},
 	{
 		weeks: 4,
@@ -74,14 +74,14 @@ var playlists = [
 			{ title: "Don't Call Me Baby (Edit)	", artist: "Madison Avenue" },
 			{
 				title: "Professional Widow(Armand's Star Trunk Funkin' Mix)",
-				artist: "Tori Amos"
+				artist: "Tori Amos",
 			},
 			{ title: "Salsoul Nugget", artist: "MS" },
 			{ title: "Vuole Ballare(feat.Malvina)", artist: "Borussia" },
 			{ title: "D.A.N.C.E. (WWW)", artist: "Justice" },
 			{
 				title: "First Contact with System Lobitso",
-				artist: "Space Dimension Controller"
+				artist: "Space Dimension Controller",
 			},
 			{ title: "Call Me!!!", artist: "Olivia O'Brien" },
 			{ title: "The Sun(Moodoid Remix)", artist: "Myd" },
@@ -91,9 +91,9 @@ var playlists = [
 			{ title: "Discow", artist: "Handbraekes" },
 			{
 				title: "It'll All Be Over (DJ Koze Remix - Radio Edit)",
-				artist: "Gerry Read"
-			}
-		]
+				artist: "Gerry Read",
+			},
+		],
 	},
 	{
 		weeks: 5,
@@ -108,9 +108,9 @@ var playlists = [
 			{ title: "Los Angeles", artist: "Jack Sapienza" },
 			{
 				title: "Tactile Sonic Glide",
-				artist: "The Shanghai Restoration Project"
-			}
-		]
+				artist: "The Shanghai Restoration Project",
+			},
+		],
 	},
 	{
 		weeks: 6,
@@ -127,8 +127,8 @@ var playlists = [
 			{ title: "Aphex Wins", artist: "Astrolemo" },
 			{ title: "Reflections", artist: "Hotel Pools" },
 			{ title: "Inga-lill", artist: "Gabriel Minguez" },
-			{ title: "Epoch", artist: "Dye O" }
-		]
+			{ title: "Epoch", artist: "Dye O" },
+		],
 	},
 	{
 		weeks: 7,
@@ -136,14 +136,14 @@ var playlists = [
 			{ title: "Tunnel", artist: "Enzofar" },
 			{
 				title: "Lucid Dreaming(Instrumental Version)[Trice Remix]",
-				artist: "Velee"
+				artist: "Velee",
 			},
 			{ title: "Day and Night", artist: "Bamba Lamer" },
 			{ title: "Halo", artist: "Okwen" },
 			{ title: "Parabola", artist: "Hammer" },
 			{ title: "Watoto", artist: "Tiriba" },
-			{ title: "Day Glo", artist: "Molife" }
-		]
+			{ title: "Day Glo", artist: "Molife" },
+		],
 	},
 	{
 		weeks: 8,
@@ -159,8 +159,8 @@ var playlists = [
 			{ title: "Hibiscus Pacific", artist: "Greeen Linez" },
 			{ title: "Lost Dreams", artist: "Infinity Frequencies" },
 			{ title: "Esprit.Wav", artist: "ESPRIT 空想 & George Clanton" },
-			{ title: "Take Care of You", artist: "Cherokee" }
-		]
+			{ title: "Take Care of You", artist: "Cherokee" },
+		],
 	},
 	{
 		weeks: 9,
@@ -175,17 +175,17 @@ var playlists = [
 			{ title: "Blossom", artist: "Purple Dive" },
 			{
 				title: "What I'm Giving You",
-				artist: "Sweeps"
+				artist: "Sweeps",
 			},
 			{ title: "Groove Therapy", artist: "Fredfades & Jawn Rice" },
 			{ title: "Dragonball Durag", artist: "Thundercat" },
 			{
 				title: "We Will Always Love You(feat.Blood Orange)",
-				artist: "The Avalanches"
+				artist: "The Avalanches",
 			},
 			{ title: "このまま夢で(feat.AAAMYYY)", artist: "Shin Sakiura" },
-			{ title: "Jigoo(Radio Edit)", artist: "Maurice Fulton & Peggy Gou" }
-		]
+			{ title: "Jigoo(Radio Edit)", artist: "Maurice Fulton & Peggy Gou" },
+		],
 	},
 	{
 		weeks: 10,
@@ -197,8 +197,8 @@ var playlists = [
 			{ title: "Ocean Waves", artist: "Phello" },
 			{ title: "Equinox", artist: "Admo" },
 			{ title: "Damn Right", artist: "Young Community" },
-			{ title: "Around the World", artist: "Daft Punk" }
-		]
+			{ title: "Around the World", artist: "Daft Punk" },
+		],
 	},
 	{
 		weeks: 11,
@@ -206,14 +206,14 @@ var playlists = [
 			{ title: "I WANNA BE DOWN", artist: "m-flo loves 坂本龍一" },
 			{
 				title: "Hand over Hand",
-				artist: "RHYTHIM IS RHYTHIM, DERRICK MAY & Mayday"
+				artist: "RHYTHIM IS RHYTHIM, DERRICK MAY & Mayday",
 			},
 			{ title: "Vivienne Westwood", artist: "minthaze" },
 			{ title: "SUGAR(Remix)[feat.Dua Lipa]", artist: "BROCKHAMPTON" },
 			{ title: "KIRARI Deck", artist: "BIM" },
 			{
 				title: "thatness and thereness(2019 Remastering)",
-				artist: "Ryuichi Sakamoto"
+				artist: "Ryuichi Sakamoto",
 			},
 			{ title: "Detached", artist: "Emil Rottmayer" },
 			{ title: "Slowtrip", artist: "sugi.wa" },
@@ -222,8 +222,8 @@ var playlists = [
 			{ title: "A Way Home", artist: "MEMOREX - MEMORIES 公式" },
 			{ title: "It Was Foggy This Morning", artist: "loftii" },
 			{ title: "Lory", artist: "Polynation" },
-			{ title: "Temple Deadbeat", artist: "Bit Cloudy" }
-		]
+			{ title: "Temple Deadbeat", artist: "Bit Cloudy" },
+		],
 	},
 	{
 		weeks: 12,
@@ -239,14 +239,14 @@ var playlists = [
 			{
 				title:
 					"The Well - Tempered Clavier, Book I: Prelude No. 1 in C Major, BWV 846",
-				artist: "Daniel Barenboim"
+				artist: "Daniel Barenboim",
 			},
 			{ title: "All the Ladies", artist: "Fatboy Slim & Eats Everything" },
 			{ title: "Landslide", artist: "KEN ISHII" },
 			{ title: "Lotus(Dub)", artist: "DUBFIRE, Kate Elsworth & Carl Craig" },
 			{ title: "rho2", artist: "Rei Harakami" },
-			{ title: "ZIG ZAG feat.BIM", artist: "木村カエラ" }
-		]
+			{ title: "ZIG ZAG feat.BIM", artist: "木村カエラ" },
+		],
 	},
 	{
 		weeks: 13,
@@ -258,23 +258,42 @@ var playlists = [
 			{ title: "Keep On", artist: "L’indécis" },
 			{
 				title: "Best Part of Us (feat. Michael Kaneko) [Acoustic Version]",
-				artist: "AmPm"
+				artist: "AmPm",
 			},
 			{
 				title: "Fair Chance (feat. Ty Dolla $ign & Lil B)",
-				artist: "Thundercat"
+				artist: "Thundercat",
 			},
 			{ title: "Comfortable", artist: "Aso" },
 			{ title: "SOMEBODY TORE MY P", artist: "tofubeats" },
 			{
 				title: "Running Red Lights (feat. Rivers Cuomo & Pink Siifu)",
-				artist: "The Avalanches"
+				artist: "The Avalanches",
 			},
 			{ title: "サイレント・ダンス", artist: "YeYe" },
 			{
 				title: "Beyond the Dance",
-				artist: "RHYTHIM IS RHYTHIM, DERRICK MAY & Mayday"
-			}
-		]
-	}
+				artist: "RHYTHIM IS RHYTHIM, DERRICK MAY & Mayday",
+			},
+		],
+	},
+	{
+		weeks: 14,
+		tracks: [
+			{ title: "愛密集", artist: "Yakkle & Shing02" },
+			{ title: "Eclipse", artist: "Meiso & DJ OKAWARI" },
+			{ title: "ameagari", artist: "MIZUKAMI" },
+			{ title: "three a.m.", artist: "53 Thieves" },
+			{ title: "Twilight Village Bop", artist: "EQUIP & FrankJavCee" },
+			{ title: "Funny Thing", artist: "Thundercat" },
+			{ title: "Dancing All Night", artist: "Vantage & Macross 82 - 99" },
+			{ title: "CUPID(Lehvi Remix)", artist: "Dvdkm" },
+			{ title: "Kudi", artist: "salute" },
+			{ title: "Time", artist: "TREGS" },
+			{
+				title: "Give Me Up(Night Tempo Showa Groove Mix)",
+				artist: "Night Tempo, BaBe",
+			},
+		],
+	},
 ];

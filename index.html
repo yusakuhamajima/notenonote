@@ -1,82 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TRB39DD");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>notenonote</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			li {
+				color: aliceblue;
+			}
+		</style>
+		<script src="./p5/p5.min.js"></script>
+	</head>
 
-<head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TRB39DD');</script>
-  <!-- End Google Tag Manager -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>notenonote</title>
-  <link rel="stylesheet" href="./css/main.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
-    rel="stylesheet">
-  <style>
-    li {
-      color: aliceblue;
-    }
-  </style>
-  <script src="./p5/p5.min.js"></script>
-</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-TRB39DD"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden;"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<h1>notenonote</h1>
+			<nav>
+				<script src="./js/nav.js"></script>
+			</nav>
+		</header>
+		<main>
+			<h2>TOP page</h2>
+			<div id="canvas"></div>
+			<script>
+				function setup() {
+					var canvas = createCanvas(340, 400, P2D);
+					canvas.parent("canvas");
+					colorMode(HSB, 360, 100, 100, 100);
+					background(200, 90, 100, 100);
+					noStroke();
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRB39DD" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <header>
-    <h1>notenonote</h1>
-    <nav>
-      <script src="./js/nav.js"></script>
-    </nav>
-  </header>
-  <main>
-    <h2>TOP page</h2>
-    <div id="canvas"></div>
-    <script>
-      function setup() {
-        var canvas = createCanvas(340, 400, P2D);
-        canvas.parent('canvas');
-        colorMode(HSB, 360, 100, 100, 100);
-        background(200, 90, 100, 100);
-        noStroke();
+					// rect
+					for (let i = 0; i < 10; i++) {
+						rect(random(0, width), random(0, height), 10, 10);
+					}
 
-        // rect
-        for (let i = 0; i < 10; i++) {
-          rect(random(0, width), random(0, height), 10, 10);
-        }
+					// text
+					fill(200, 0, 100, 100);
+					textSize(20);
+					text("creative coding", random(0, width), random(0, height));
+					text("playlist", random(0, width), random(0, height));
+					text("programming", random(0, width), random(0, height));
+				}
 
-        // text
-        fill(200, 0, 100, 100);
-        textSize(20);
-        text('creative coding', random(0, width), random(0, height));
-        text('playlist', random(0, width), random(0, height));
-        text('programming', random(0, width), random(0, height));
-      }
-
-      function draw() {
-        // ellipse
-        noStroke();
-        rect(mouseX, mouseY, 10, 10);
-
-      }
-    </script>
-    <div>
-      <p><a href="https://note.com/yusaku">note/yusaku</a></p>
-    </div>
-  </main>
-  <footer>
-    <script src="./js/nav.js"></script>
-  </footer>
-</body>
-
+				function draw() {
+					// ellipse
+					noStroke();
+					rect(mouseX, mouseY, 10, 10);
+				}
+			</script>
+			<div>
+				<p><a href="https://note.com/yusaku">note/yusaku</a></p>
+			</div>
+		</main>
+		<footer>
+			<script src="./js/footer-nav.js"></script>
+		</footer>
+	</body>
 </html>

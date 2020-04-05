@@ -13,6 +13,7 @@ header {
 
 main {
 	padding: 1em;
+	color: lavenderblush;
 }
 
 main div blockquote {
@@ -22,6 +23,7 @@ main div blockquote {
 
 footer {
 	padding: 1em;
+	color: lavenderblush;
 }
 
 h2 {

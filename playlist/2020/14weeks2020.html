@@ -20,7 +20,7 @@
 		<!-- End Google Tag Manager -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>11weeks2020 | notenonote</title>
+		<title>14weeks2020 | notenonote</title>
 		<link rel="stylesheet" href="../../css/main.css" />
 		<link rel="stylesheet" href="../../css/playlist.css" />
 		<link
@@ -48,15 +48,15 @@
 		</header>
 		<main>
 			<h2>playlist / 2020 /</h2>
-			<h3>11weeks</h3>
-			<img src="../../images/11weeks2020.png" alt="" width="640" height="335" />
-			<h4>New</h4>
+			<h3>14weeks</h3>
+			<img src="../../images/14weeks2020.png" alt="" width="640" height="335" />
+			<h4>New & Old</h4>
 			<div class="list">
 				<script src="../data/archive_list_2020.js"></script>
 				<script>
 					document.write("<ul>");
 
-					var plylsweeks = playlists[10];
+					var plylsweeks = playlists[13];
 					for (let i = 0; i < plylsweeks["tracks"].length; i++) {
 						var num = i + 1;
 						document.write(
@@ -74,6 +74,18 @@
 				</script>
 			</div>
 
+			<!-- youtube -->
+			<div>
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/9n7SdQTOESc"
+					frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+
 			<!-- weekly playlist -->
 			<div class="weekly-playlist-nav">
 				<h3>weekly playlist</h3>
@@ -81,34 +93,9 @@
 					<script src="../../js/weekly-playlist-nav.js"></script>
 				</nav>
 			</div>
-
-			<!-- youtube -->
-			<div>
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/yMJHQPCMBs4"
-					frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
-				></iframe>
-			</div>
-			<div>
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/x7Kp2zHK0TQ"
-					frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
-				></iframe>
-			</div>
 		</main>
 		<footer>
-			<ul>
-				<li><a href="../../index.html">home</a></li>
-				<li><a href="../index.html">all tracks 2020</a></li>
-			</ul>
+			<script src="../../js/footer-nav.js"></script>
 		</footer>
 	</body>
 </html>
