@@ -22,3 +22,15 @@
 .weekly-playlist-nav li {
 	color: aliceblue;
 }
+
+.playlist-comment {
+	padding: 0 1em;
+}
+
+.playlist-comment p {
+	font-size: 0.9em;
+}
+
+.blog-nohepl {
+	padding: 0 1em;
+}

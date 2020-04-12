@@ -296,4 +296,31 @@ var playlists = [
 			},
 		],
 	},
+	{
+		weeks: 15,
+		tracks: [
+			{ title: "Until I'm Home", artist: "Imagiro" },
+			{ title: "Let It Go", artist: "Dan Mason" },
+			{ title: "Got My Number", artist: "Kim Petras" },
+			{ title: "Worries", artist: "KIRARA" },
+			{
+				title: "Boys Ain't Shit (feat. Tate McRae & Audrey Mika)",
+				artist: "SAYGRACE",
+			},
+			{ title: "ily(i love you baby)[feat.Emilee]", artist: "Surf Mesa" },
+			{
+				title: "Hypnagogic(I Can't Wait) [edit]",
+				artist: "Love Regenerator, Calvin Harris",
+			},
+			{
+				title: "Say So(Jax Jones Midnight Snack Remix)",
+				artist: "Doja Cat & Jax Jones",
+			},
+			{ title: "Strawberry Privilege", artist: "Yves Tumor" },
+			{ title: "Nicotine", artist: "Sycco" },
+			{ title: "Get Your Wish", artist: "Porter Robinson" },
+			{ title: "Travelin'", artist: "Asleep Archive" },
+			{ title: "Night Lights 2020", artist: "Shingo Suzuki" },
+		],
+	},
 ];
