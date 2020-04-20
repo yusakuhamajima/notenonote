@@ -1,3 +1,4 @@
+document.write("<p>一覧</p>");
 document.write("<ul>");
 document.write('<li><a href="./cc-004.html">cc-004</a></li>');
 document.write('<li><a href="./cc-005.html">cc-005</a></li>');

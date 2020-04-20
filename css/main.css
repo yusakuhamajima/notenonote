@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #19b2ff;
-	font-family: "Baloo Thambi 2", cursive;
+	font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 header {
@@ -49,4 +49,19 @@ h4 {
 
 a:visited {
 	color: #ffff32;
+}
+
+.kakomi {
+	padding: 0 1em 0.7em;
+	margin: 0.5em;
+	border: #dff6f0 solid 0.01em;
+}
+
+p {
+	font-size: 0.9em;
+	padding-left: 1.5em;
+}
+
+ul {
+	font-size: 0.8em;
 }
