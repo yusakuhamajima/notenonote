@@ -1,7 +1,5 @@
 // noteマガジンヘッダーサイズ　1600×568px
 
-let canvas_w = 1600 / 2;
-let canvas_h = 568 / 2;
 let w, myfont;
 
 function preload() {
@@ -9,7 +7,7 @@ function preload() {
 }
 
 function setup() {
-	var canvas = createCanvas(canvas_w, canvas_h, P2D);
+	var canvas = createCanvas(800, 284, P2D);
 	canvas.parent("canvas");
 
 	colorMode(HSB, 360, 100, 100, 100);
@@ -23,7 +21,6 @@ function setup() {
 		ellipse(random(0, width), random(0, height), w, w);
 	}
 
-	text;
 	c_text = color(204, 77, 100, 100);
 	fill(c_text);
 	textFont(myfont);
