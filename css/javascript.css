@@ -1,12 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: lightslategray;
+	background-color: lightseagreen;
 	font-family: "M PLUS Rounded 1c", sans-serif;
 	font-size: 16px;
 }
 
 header {
+	background-color: lightseagreen;
 	color: aliceblue;
 	padding: 0 1em;
 }
@@ -16,9 +17,8 @@ main {
 	color: lavenderblush;
 }
 
-main div blockquote {
-	font-family: "Noto Serif JP", serif;
-	color: lavenderblush;
+main h1 {
+	font-size: 1.2em;
 }
 
 footer {
@@ -33,14 +33,12 @@ h2 {
 }
 
 h3 {
-	background-color: #19b2ff;
 	padding: 0.1em 0.5em;
 	color: #ffffff;
 	font-size: 1em;
 }
 
 h4 {
-	background-color: #19b2ff;
 	padding: 0.1em 0.5em;
 	color: #ffffff;
 	font-size: 1em;

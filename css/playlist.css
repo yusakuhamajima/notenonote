@@ -1,3 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: mediumslateblue;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	font-size: 16px;
+}
+
+header {
+	color: aliceblue;
+	padding: 0 1em;
+}
+
+main {
+	padding: 1em;
+	color: #ffffff;
+}
+
+main div blockquote {
+	font-family: "Noto Serif JP", serif;
+	color: aliceblue;
+}
+
+footer {
+	padding: 1em;
+	color: aliceblue;
+}
+
+h2 {
+	padding: 0.1em 0.5em;
+	color: aliceblue;
+	font-size: 1.2em;
+}
+
+h3 {
+	padding: 0.1em 0.5em;
+	color: aliceblue;
+	font-size: 1em;
+}
+
+h4 {
+	background-color: #19b2ff;
+	padding: 0.1em 0.5em;
+	color: #ffffff;
+	font-size: 1em;
+}
+
+a:visited {
+	color: #ffff32;
+}
+
+.kakomi {
+	padding: 0 1em 0.7em;
+	margin: 0.5em;
+	border: #dff6f0 solid 0.01em;
+}
+
+p {
+	font-size: 0.9em;
+	padding-left: 1.5em;
+}
+
+ul {
+	font-size: 0.8em;
+}
+
 .list li {
 	color: #ffffff;
 	list-style-type: none;

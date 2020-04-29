@@ -18,41 +18,39 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>cc-012 | notenonote</title>
-		<link rel="stylesheet" href="../css/main.css" />
-		<link rel="stylesheet" href="../css/cc.css" />
-		<link rel="stylesheet" href="../css/prettify.css" />
+		<link rel="stylesheet" href="../css/javascript.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="../p5/p5.min.js"></script>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=sunburst"></script>
 	</head>
 
 	<body>
 		<header>
-			<h1>notenonote</h1>
+			<h1>javascript @notenonote</h1>
 		</header>
 		<main>
-			<h2>creative coding</h2>
-			<div class="kakomi">
-				<h3>cc-012</h3>
-				<div id="canvas"></div>
-				<iframe
-					src="https://www.openprocessing.org/sketch/880428/embed/"
-					width="800"
-					height="300"
-				></iframe>
-				<script src="https://gist.github.com/yusakuhamajima/f2d205512294bcd080f43f509116f6bb.js"></script>
+			<h1>002 - createElement</h1>
+			<div>
+				<p id="js002"></p>
 			</div>
+			<script>
+				let newParag = document.createElement("p");
+				newParag.textContent = "タグを生成する";
+				document.getElementById("js002").appendChild(newParag);
+			</script>
+			<pre class="prettyprint lang-js">
+                let newParag = document.createElement("p");
+                newParag.textContent = "タグを生成する";
+                document.getElementById("js002").appendChild(newParag);
+            </pre
+			>
 		</main>
 		<footer>
-			<div>
-				<script src="../js/nav_2.js"></script>
-			</div>
 			<div>
 				<script src="../js/footer-nav.js"></script>
 			</div>
 		</footer>
-		<script src="./p5js/cc-012.js"></script>
 	</body>
 </html>

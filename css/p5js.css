@@ -1,41 +1,42 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: lightslategray;
+	background-color: #f783a0;
+	/* background-color: #ed225d; */
 	font-family: "M PLUS Rounded 1c", sans-serif;
 	font-size: 16px;
 }
 
 header {
-	color: aliceblue;
+	color: #ed225d;
 	padding: 0 1em;
 }
 
 main {
 	padding: 1em;
-	color: lavenderblush;
+	color: #ed225d;
 }
 
 main div blockquote {
 	font-family: "Noto Serif JP", serif;
-	color: lavenderblush;
+	color: #ed225d;
 }
 
 footer {
 	padding: 1em;
-	color: lavenderblush;
+	color: #ed225d;
 }
 
 h2 {
 	padding: 0.1em 0.5em;
-	color: #ffffff;
+	color: #ed225d;
 	font-size: 1.2em;
 }
 
 h3 {
 	background-color: #19b2ff;
 	padding: 0.1em 0.5em;
-	color: #ffffff;
+	color: #ed225d;
 	font-size: 1em;
 }
 

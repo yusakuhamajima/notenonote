@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-76272601-12"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-76272601-12");
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>cc-012 | notenonote</title>
+		<link rel="stylesheet" href="../css/javascript.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>javascript @notenonote</h1>
+		</header>
+		<main>
+			<h1>001 - getElementsByID (& prettify)</h1>
+			<div>
+				<p id="test"></p>
+			</div>
+			<script>
+				let newParag = document.getElementById("test");
+				newParag.innerText = "テキストを入れる";
+			</script>
+			<div>
+				<pre class="prettyprint lang-js">
+					let newParag = document.getElementById("test");
+					newParag.innerText = "テキストを入れる";
+				</pre
+				>
+			</div>
+			<div class="kakomi">
+				<h2>prettify</h2>
+				<p>
+					<a href="https://rfs.jp/sb/javascript/js-lab/code-prettify.html"
+						>Google Code Prettifyの概要</a
+					>
+				</p>
+				<p>headerに入れる</p>
+				<pre class="prettyprint">
+							https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=sunburst
+						</pre
+				>
+				<p>preにclass「prettyprint lang-js」を設定</p>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<script src="../js/footer-nav.js"></script>
+			</div>
+		</footer>
+	</body>
+</html>

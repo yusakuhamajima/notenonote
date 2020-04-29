@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TRB39DD");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>canvas | notenonote</title>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/programming.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-TRB39DD"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden;"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<h1>canvas @notenonote</h1>
+			<nav>
+				<script src="../js/nav_2.js"></script>
+			</nav>
+		</header>
+		<main>
+			<h1>canvas-002</h1>
+			<div>
+				<h2>↓ canvas</h2>
+				<canvas id="canvas" width="640px" height="335px"></canvas>
+				<script src="./js/canvas-002.js"></script>
+
+				<br />
+				<!-- download -->
+				<p>↓ダウンロードボタン</p>
+				<button onclick="downloadCanvas()">ダウンロード</button>
+			</div>
+			<div>
+				<pre class="prettyprint">
+					<code>
+						function downloadCanvas() { let canvas =
+						document.getElementById("canvas"); let link =
+						document.createElement("a"); link.href = canvas.toDataURL();
+						link.download = "canvas-002.png"; link.click(); }
+					</code>
+				</pre>
+			</div>
+			<div>
+				<p>
+					<a href="https://qiita.com/iwaimagic/items/1d16a721b36f04e91aed"
+						>canvasを画像としてダウンロードさせたかった話</a
+					>
+				</p>
+				<p>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL"
+						>MDN:HTMLCanvasElement.toDataURL()</a
+					>
+				</p>
+			</div>
+		</main>
+		<!-- <footer>
+			<script src="./js/nav.js"></script>
+		</footer> -->
+	</body>
+</html>
