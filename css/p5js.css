@@ -12,6 +12,10 @@ header {
 	padding: 0 1em;
 }
 
+nav {
+	float: right;
+}
+
 main {
 	padding: 1em;
 	color: #ed225d;

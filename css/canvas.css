@@ -10,6 +10,14 @@ header {
 	background-color: #19b2ff;
 	color: aliceblue;
 	padding: 0 1em;
+	position: relative;
+}
+
+nav {
+	float: right;
+	position: fixed;
+	top: 0;
+	right: 0;
 }
 
 main {
@@ -65,4 +73,14 @@ p {
 
 ul {
 	font-size: 0.8em;
+}
+
+pre {
+	margin: 1em 0; /* ブロック前後の余白 */
+	padding: 1rem 0; /* ブロック内の余白 */
+	border-radius: 3px; /* 角丸 */
+	background: #000; /* 背景色 */
+	color: #fff; /* 文字色 */
+	white-space: pre-wrap; /* はみ出たときに折り返す */
+	font-size: 0.8rem;
 }

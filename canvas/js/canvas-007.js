@@ -1,7 +1,4 @@
 (() => {
-	let canvas = null;
-	let ctx = null;
-
 	window.addEventListener(
 		"load",
 		() => {
@@ -11,35 +8,36 @@
 		false
 	);
 
+	let canvas = null;
+	let ctx = null;
+
 	function initialize() {
 		canvas = document.getElementById("main_canvas");
 		canvas.width = 640;
 		canvas.height = 335;
 		ctx = canvas.getContext("2d");
-		ctx.fillStyle = "#aaa";
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
 	}
 
 	function render() {
-		setInterval(() => {
-			drawRect(100, 100, 100, 100);
-		}, 1000);
-	}
+		let step = 30;
 
-	function drawRect(x, y, w, h) {
-		let colors = [
-			"red",
-			"blue",
-			"yellow",
-			"black",
-			"green",
-			"purple",
-			"orange",
-		];
-		let rnd_color = Math.floor(Math.random() * colors.length);
-		console.log(rnd_color);
-		ctx.fillStyle = colors[rnd_color];
-		ctx.fillRect(x, y, w, h);
+		for (let i = 0; i < canvas.width / step; i++) {
+			for (let j = 0; j < canvas.height / step; j++) {
+				let colors = [
+					"red",
+					"blue",
+					"yellow",
+					"black",
+					"green",
+					"purple",
+					"orange",
+				];
+				let rnd_color = Math.floor(Math.random(colors.length) * 10);
+				ctx.fillStyle = colors[rnd_color];
+				ctx.fillRect(i * step, j * step, step, step);
+			}
+		}
 	}
 })();
 
@@ -47,6 +45,6 @@ function downloadCanvas() {
 	let canvas = document.getElementById("main_canvas");
 	let link = document.createElement("a");
 	link.href = canvas.toDataURL();
-	link.download = "canvas-006.png";
+	link.download = "canvas-007.png";
 	link.click();
 }

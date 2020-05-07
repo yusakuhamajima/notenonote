@@ -9,6 +9,14 @@ body {
 header {
 	color: aliceblue;
 	padding: 0 1em;
+	position: relative;
+}
+
+nav {
+	float: right;
+	position: fixed;
+	top: 0;
+	right: 0;
 }
 
 main {
