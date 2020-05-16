@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TRB39DD");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>canvas | notenonote</title>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/canvas.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-TRB39DD"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden;"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<h1>canvas @notenonote</h1>
+			<nav>
+				<script src="../js/nav_2.js"></script>
+			</nav>
+		</header>
+		<main>
+			<h1>canvas-013</h1>
+			<div>
+				<h2>円を書く</h2>
+				<p>角度の単位はラジアン。ラジアン＝度数÷180×π</p>
+				<canvas id="main_canvas" width="640px" height="335px"></canvas>
+				<script src="./js/canvas-013.js"></script>
+				<div>
+					<p>
+						<a href="http://www.htmq.com/canvas/arc.shtml"
+							>HTMLクイックリファレンス</a
+						>
+					</p>
+					<p>
+						<a
+							href="https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Canvas_tutorial/Drawing_shapes"
+							>MDN</a
+						>
+					</p>
+				</div>
+				<br />
+				<!-- download -->
+				<button onclick="downloadCanvas()">ダウンロード</button>
+			</div>
+		</main>
+		<!-- <footer>
+			<script src="./js/nav.js"></script>
+		</footer> -->
+	</body>
+</html>

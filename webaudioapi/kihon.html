@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>Web Audio APIの基本</title>
+	</head>
+
+	<body>
+		<p>音を出して、その音を止める</p>
+		<button onclick="playSound()">Play</button>
+		<button onclick="playSoundStop()">Stop</button>
+		<script>
+			// var ctx = new AudioContext();
+
+			let ctx, osc;
+
+			function playSound() {
+				ctx = new AudioContext(); // AudioContext を作成
+
+				// オシレータを作成
+				osc = ctx.createOscillator();
+				// オシレータは↓こちら↓でも動くみたい
+				// osc = new OscillatorNode(ctx);
+
+				// オシレータを出力に接続
+				osc.connect(ctx.destination);
+
+				osc.start(0);
+			}
+
+			function playSoundStop() {
+				osc.stop();
+			}
+		</script>
+	</body>
+</html>

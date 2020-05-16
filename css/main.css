@@ -1,74 +1,39 @@
 body {
-	margin: 0;
-	padding: 0;
+	/* margin: 0; */
 	background-color: lightslategray;
 	font-family: "M PLUS Rounded 1c", sans-serif;
-	font-size: 16px;
+	color: lavenderblush;
+	display: grid;
+	grid-template:
+		"header header header" 100px
+		"nav main aside" 1fr
+		"footer footer footer" 100px
+		/ 150px 1fr 180px;
 }
 
 header {
-	color: aliceblue;
-	padding: 0 1em;
-	position: relative;
+	grid-area: header;
 }
 
 nav {
-	float: right;
-	position: fixed;
-	top: 0;
-	right: 0;
+	grid-area: nav;
+	/* outline: solid 1px white; */
+}
+
+nav li :hover {
+	color: lightgoldenrodyellow;
 }
 
 main {
-	padding: 1em;
-	color: lavenderblush;
+	grid-area: main;
+	/* outline: solid 1px white; */
 }
 
-main div blockquote {
-	font-family: "Noto Serif JP", serif;
-	color: lavenderblush;
+aside {
+	grid-area: aside;
+	/* outline: solid 1px white; */
 }
 
 footer {
-	padding: 1em;
-	color: lavenderblush;
-}
-
-h2 {
-	padding: 0.1em 0.5em;
-	color: #ffffff;
-	font-size: 1.2em;
-}
-
-h3 {
-	background-color: #19b2ff;
-	padding: 0.1em 0.5em;
-	color: #ffffff;
-	font-size: 1em;
-}
-
-h4 {
-	background-color: #19b2ff;
-	padding: 0.1em 0.5em;
-	color: #ffffff;
-	font-size: 1em;
-}
-
-a:visited {
-	color: #ffff32;
-}
-
-.kakomi {
-	padding: 0 1em 0.7em;
-	margin: 0.5em;
-	border: #dff6f0 solid 0.01em;
-}
-
-p {
-	font-size: 0.9em;
-	padding-left: 1.5em;
-}
-
-ul {
-	font-size: 0.8em;
+	grid-area: footer;
 }

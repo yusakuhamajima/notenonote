@@ -20,12 +20,14 @@
 	}
 
 	function render() {
-		const step = 20;
-		for (let i = 0; i < canvas.width; i += step) {
-			for (let j = 0; j < canvas.height; j += step) {
-				drawRect(i, j, step, step);
+		setInterval(() => {
+			const step = 20;
+			for (let i = 0; i < canvas.width; i += step) {
+				for (let j = 0; j < canvas.height; j += step) {
+					drawRect(i, j, step, step);
+				}
 			}
-		}
+		}, 1000);
 	}
 
 	function drawRect(x, y, w, h) {
@@ -42,14 +44,12 @@
 			"#ffe9c5",
 			"#b4f2e1",
 		];
-		setInterval(changeColor, 1000);
-		function changeColor() {
-			rnd_color = Math.floor(Math.random() * colors.length);
-			console.log(rnd_color);
-			color = colors[rnd_color];
-			ctx.fillStyle = color;
-			ctx.fillRect(x, y, w, h);
-		}
+
+		rnd_color = Math.floor(Math.random() * colors.length);
+		console.log(rnd_color);
+		color = colors[rnd_color];
+		ctx.fillStyle = color;
+		ctx.fillRect(x, y, w, h);
 	}
 })();
 
@@ -57,6 +57,6 @@ function downloadCanvas() {
 	let canvas = document.getElementById("main_canvas");
 	let link = document.createElement("a");
 	link.href = canvas.toDataURL();
-	link.download = "canvas-009.png";
+	link.download = "canvas-010.png";
 	link.click();
 }
