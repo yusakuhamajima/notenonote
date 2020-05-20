@@ -1,34 +1,12 @@
 body {
-	margin: 0;
-	padding: 0;
 	background-color: #f783a0;
-	/* background-color: #ed225d; */
-	font-family: "M PLUS Rounded 1c", sans-serif;
-	font-size: 16px;
 }
 
-header {
-	color: #ed225d;
-	padding: 0 1em;
-}
-
-nav {
-	float: right;
-}
-
-main {
-	padding: 1em;
-	color: #ed225d;
-}
-
-main div blockquote {
-	font-family: "Noto Serif JP", serif;
-	color: #ed225d;
-}
-
-footer {
-	padding: 1em;
-	color: #ed225d;
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 }
 
 h2 {

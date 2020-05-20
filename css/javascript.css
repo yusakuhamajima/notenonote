@@ -1,24 +1,12 @@
 body {
-	margin: 0;
-	padding: 0;
 	background-color: lightseagreen;
-	font-family: "M PLUS Rounded 1c", sans-serif;
-	font-size: 16px;
 }
 
-header {
-	background-color: lightseagreen;
-	color: aliceblue;
-	padding: 0 1em;
-}
-
-nav {
-	float: right;
-}
-
-main {
-	padding: 1em;
-	color: lavenderblush;
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 }
 
 main h1 {

@@ -27,12 +27,21 @@
 	}
 
 	function drawText() {
-		let text = "note";
+		// text1
+		let text = "Canvas";
 		let x = 100;
 		let y = 100;
 		ctx.font = "48px serif";
 		ctx.fillStyle = "yellow";
 		ctx.fillText(text, x, y);
+
+		// text2
+		let text1 = "JavaScript";
+		let x1 = 200;
+		let y1 = 200;
+		ctx.font = "48px serif";
+		ctx.fillStyle = "orange";
+		ctx.fillText(text1, x1, y1);
 	}
 })();
 

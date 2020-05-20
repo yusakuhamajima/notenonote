@@ -1,86 +1,10 @@
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #19b2ff;
-	font-family: "M PLUS Rounded 1c", sans-serif;
-	font-size: 16px;
+	background-color: lightskyblue;
 }
 
-header {
-	background-color: #19b2ff;
-	color: aliceblue;
-	padding: 0 1em;
-	position: relative;
-}
-
-nav {
-	float: right;
-	position: fixed;
-	top: 0;
-	right: 0;
-}
-
-main {
-	padding: 1em;
-	color: lavenderblush;
-}
-
-main div blockquote {
-	font-family: "Noto Serif JP", serif;
-	color: lavenderblush;
-}
-
-footer {
-	padding: 1em;
-	color: lavenderblush;
-}
-
-h2 {
-	background-color: #19b2ff;
-	padding: 0.1em 0.5em;
-	color: #ffffff;
-	font-size: 1.2em;
-}
-
-h3 {
-	background-color: #19b2ff;
-	padding: 0.1em 0.5em;
-	color: #ffffff;
-	font-size: 1em;
-}
-
-h4 {
-	background-color: #19b2ff;
-	padding: 0.1em 0.5em;
-	color: #ffffff;
-	font-size: 1em;
-}
-
-a:visited {
-	color: #ffff32;
-}
-
-.kakomi {
-	padding: 0 1em 0.7em;
-	margin: 0.5em;
-	border: #dff6f0 solid 0.01em;
-}
-
-p {
-	font-size: 0.9em;
-	padding-left: 1.5em;
-}
-
-ul {
-	font-size: 0.8em;
-}
-
-pre {
-	margin: 1em 0; /* ブロック前後の余白 */
-	padding: 1rem 0; /* ブロック内の余白 */
-	border-radius: 3px; /* 角丸 */
-	background: #000; /* 背景色 */
-	color: #fff; /* 文字色 */
-	white-space: pre-wrap; /* はみ出たときに折り返す */
-	font-size: 0.8rem;
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 }

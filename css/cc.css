@@ -1,11 +1,22 @@
-pre {
+/* pre {
 	background-color: #ffffff;
 	width: 630px;
-}
+} */
 
-div.p5js-wrap {
+/* div.p5js-wrap {
 	position: relative;
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;
+} */
+
+body {
+	background-color: lightskyblue;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 }

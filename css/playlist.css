@@ -1,33 +1,17 @@
 body {
-	margin: 0;
-	padding: 0;
 	background-color: mediumslateblue;
-	font-family: "M PLUS Rounded 1c", sans-serif;
-	font-size: 16px;
-}
-
-header {
-	color: aliceblue;
-	padding: 0 1em;
-}
-
-nav {
-	float: right;
-}
-
-main {
-	padding: 1em;
-	color: #ffffff;
 }
 
 main div blockquote {
-	font-family: "Noto Serif JP", serif;
+	font-family: 'Noto Serif JP', serif;
 	color: aliceblue;
 }
 
-footer {
-	padding: 1em;
-	color: aliceblue;
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 }
 
 h2 {

@@ -20,13 +20,14 @@
 		<!-- End Google Tag Manager -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>JavaScript | notenonote</title>
+		<title>canvas | notenonote</title>
 		<link rel="stylesheet" href="../css/main.css" />
-		<link rel="stylesheet" href="../css/javascript.css" />
+		<link rel="stylesheet" href="../css/canvas.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=sunburst"></script>
 	</head>
 
 	<body>
@@ -41,31 +42,32 @@
 		></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		<header>
-			<h1>javascript @notenonote</h1>
+			<h1>canvas @notenonote</h1>
 			<nav>
 				<script src="../js/nav_2.js"></script>
 			</nav>
 		</header>
-		<main class="container">
+		<main>
+			<h1>canvas-018</h1>
 			<div>
-				<ol>
-					<!-- <li>
-						<a href="javascript-003.html">003 - aaa</a>
-					</li> -->
-					<li>
-						<a href="javascript-002.html">002 - createElement</a>
-					</li>
-					<li>
-						<a href="javascript-001.html">001 - getElementsByID (& prettify)</a>
-					</li>
-				</ol>
+				<h2>Canvasの基本の振り返り</h2>
+				<canvas width="640px" height="335px"></canvas>
+				<script src="./js/canvas-018.js"></script>
+				<div>
+					<p>
+						<a
+							href="https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Canvas_tutorial/Drawing_shapes"
+							>MDN</a
+						>
+					</p>
+				</div>
+				<br />
+				<!-- download -->
+				<button onclick="downloadCanvas()">ダウンロード</button>
 			</div>
 		</main>
-		<aside>
-			<script src="../js/aside.js"></script>
-		</aside>
-		<footer>
-			<script src="../js/footer-nav.js"></script>
-		</footer>
+		<!-- <footer>
+			<script src="./js/nav.js"></script>
+		</footer> -->
 	</body>
 </html>
