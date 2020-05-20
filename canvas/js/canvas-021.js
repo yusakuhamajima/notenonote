@@ -20,7 +20,7 @@
 	}
 
 	function render() {
-		ctx.fillStyle = '#aaa';
+		ctx.fillStyle = 'lightyellow';
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 		for (let degrees = 0; degrees < canvas.width; degrees += 5) {
