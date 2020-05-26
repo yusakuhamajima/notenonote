@@ -42,7 +42,7 @@
 		<header>
 			<h1>canvas @notenonote</h1>
 			<nav>
-				<script src="../js/nav_2.js"></script>
+				<!-- <script src="../js/nav_2.js"></script> -->
 			</nav>
 		</header>
 		<main>
@@ -54,46 +54,6 @@
 				<p><a href="./index.html">一覧へ</a></p>
 				<!-- download -->
 				<button onclick="downloadCanvas()">ダウンロード</button>
-			</div>
-			<div>
-				<pre><code class="prettyprint lang-js">
-                window.addEventListener(
-                "load",() => {
-                initialize();
-                render();
-                },false);
-                
-                let canvas = null;
-                let ctx = null;
-                
-                function initialize() {
-                canvas = document.getElementById("main_canvas");
-                canvas.width = 640;
-                canvas.height = 335;
-                ctx = canvas.getContext("2d");
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                }
-                
-                function render() {
-                let step = 30;
-                
-                for (let i = 0; i < canvas.width / step; i++) { 
-                    for (let j=0; j < canvas.height / step; j++) { 
-                        let colors=[ 
-                        "red", 
-                        "blue" , 
-                        "yellow" , 
-                        "black" , 
-                        "green" , 
-                        "purple" , 
-                        "orange" ]; 
-                        
-                        let rnd_color=Math.floor(Math.random(colors.length) * 10); 
-                        ctx.fillStyle=colors[rnd_color]; 
-                        ctx.fillRect(i * step, j * step, step, step); } 
-                    } 
-                }
-            </code></pre>
 			</div>
 		</main>
 		<!-- <footer>
