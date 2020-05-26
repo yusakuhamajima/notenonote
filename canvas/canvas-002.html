@@ -52,22 +52,12 @@
 				<h2>↓ canvas</h2>
 				<canvas id="canvas" width="640px" height="335px"></canvas>
 				<script src="./js/canvas-002.js"></script>
-
-				<br />
+				<p><a href="./index.html">一覧へ</a></p>
 				<!-- download -->
 				<p>↓ダウンロードボタン</p>
 				<button onclick="downloadCanvas()">ダウンロード</button>
 			</div>
-			<div>
-				<pre class="prettyprint">
-					<code>
-						function downloadCanvas() { let canvas =
-						document.getElementById("canvas"); let link =
-						document.createElement("a"); link.href = canvas.toDataURL();
-						link.download = "canvas-002.png"; link.click(); }
-					</code>
-				</pre>
-			</div>
+
 			<div>
 				<p>
 					<a href="https://qiita.com/iwaimagic/items/1d16a721b36f04e91aed"
