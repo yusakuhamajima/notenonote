@@ -27,6 +27,7 @@
 			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="./data/playlists.js"></script>
 	</head>
 
 	<body>
@@ -47,72 +48,28 @@
 			<script src="../js/nav_2.js"></script>
 		</nav>
 		<main class="container">
-			<div class="playlist">
-				<h3>20weeks</h3>
-				<a href="https://note.com/yusaku/n/nb8a88f4dcc77"
-					><img src="../images/20weeks2020.png" alt="" width="100%"
+			<script>
+				for (let i = 0; i < 20; i++) {
+					document.write('<div>');
+					document.write(`<h3>${playlists[i].weeks}weeks</h3>`);
+					document.write(`<a href="${playlists[i].url}">`);
+					document.write(
+						`<img src="../images/${playlists[i].weeks}weeks2020.png" alt="" width="100%"/>`
+					);
+					document.write('</a>');
+					document.write('</div>');
+				}
+			</script>
+			<div>
+				<h3>スピッツ</h3>
+				<a href="https://note.com/yusaku/n/n0c7be54be31f"
+					><img src="../images/spitz01_2020.png" alt="" width="100%"
 				/></a>
 			</div>
-			<div class="playlist">
-				<h3>19weeks</h3>
-				<a href="https://note.com/yusaku/n/nfc1b8fd3bfed"
-					><img src="../images/19weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>18weeks</h3>
-				<a href="https://note.com/yusaku/n/n6496fdcf9bd4"
-					><img src="../images/18weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>17weeks</h3>
-				<img src="../images/17weeks2020.png" alt="" width="100%" />
-			</div>
-			<div class="playlist">
-				<h3>16weeks</h3>
-				<img src="../images/16weeks2020.png" alt="" width="100%" />
-			</div>
-			<div class="playlist">
-				<h3>15weeks</h3>
-				<a href="./2020/15weeks2020.html"
-					><img src="../images/15weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>14weeks</h3>
-				<a href="./2020/14weeks2020.html"
-					><img src="../images/14weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>13weeks</h3>
-				<a href="./2020/13weeks2020.html"
-					><img src="../images/13weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>12weeks</h3>
-				<a href="./2020/12weeks2020.html"
-					><img src="../images/12weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>11weeks</h3>
-				<a href="./2020/11weeks2020.html"
-					><img src="../images/11weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>10weeks</h3>
-				<a href="./2020/10weeks2020.html"
-					><img src="../images/10weeks2020.png" alt="" width="100%"
-				/></a>
-			</div>
-			<div class="playlist">
-				<h3>9weeks</h3>
-				<a href="./2020/09weeks2020.html"
-					><img src="../images/09weeks2020_2.png" alt="" width="100%"
+			<div>
+				<h3>Playlist for Work 01</h3>
+				<a href="https://note.com/yusaku/n/n6cea07c56450"
+					><img src="../images/playlistforwork01.png" alt="" width="100%"
 				/></a>
 			</div>
 		</main>
