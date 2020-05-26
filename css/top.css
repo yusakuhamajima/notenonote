@@ -2,7 +2,18 @@ body {
 	background-color: lightslategray;
 }
 
-.main_header {
+h2 {
+	font-size: 0.9rem;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+/* .main_header {
 	text-align: center;
 	background-color: teal;
 }
@@ -12,4 +23,4 @@ body {
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 10px;
-}
+} */

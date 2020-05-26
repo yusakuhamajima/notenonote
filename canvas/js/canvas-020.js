@@ -33,11 +33,8 @@
 	function drawArc(x, y, radius) {
 		ctx.beginPath();
 		ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-		ctx.closePath();
-		ctx.fillStyle = 'yellow';
 
 		let distance = Math.hypot(canvas.width / 2 - x, canvas.height / 2 - y);
-		console.log(distance);
 
 		if (distance < 150) {
 			ctx.fillStyle = 'blue';

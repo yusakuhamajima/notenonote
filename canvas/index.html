@@ -42,11 +42,41 @@
 		<!-- End Google Tag Manager (noscript) -->
 		<header>
 			<h1>canvas @notenonote</h1>
-			<nav>
-				<script src="../js/nav_2.js"></script>
-			</nav>
 		</header>
+		<nav>
+			<script src="../js/nav_2.js"></script>
+		</nav>
 		<main class="container">
+			<script>
+				// 更新↓
+				let articleNum = 25;
+				// 更新↑
+				for (let num = 1; num <= articleNum; num++) {
+					document.write('<div>');
+					if (num < 10) {
+						document.write(`<h2>canvas-00${num}</h2>`);
+						document.write(`<a href="./canvas-00${num}.html">`);
+						document.write(
+							`<img src="../images/canvas-00${num}.png" alt="" width="100%"/>`
+						);
+					} else if (num < 100) {
+						document.write(`<h2>canvas-0${num}</h2>`);
+						document.write(`<a href="./canvas-0${num}.html">`);
+						document.write(
+							`<img src="../images/canvas-0${num}.png" alt="" width="100%"/>`
+						);
+					}
+
+					document.write('</a>');
+					document.write('</div>');
+				}
+			</script>
+			<!-- <div>
+				<h2>canvas-021</h2>
+				<a href="./canvas-021.html"
+					><img src="../images/canvas-021.png" alt="" width="100%"
+				/></a>
+			</div>
 			<div>
 				<h2>canvas-020</h2>
 				<a href="./canvas-020.html"
@@ -166,7 +196,7 @@
 				<a href="./canvas-001.html"
 					><img src="../images/canvas-001.png" alt="" width="100%"
 				/></a>
-			</div>
+			</div> -->
 		</main>
 		<aside>
 			<script src="../js/aside.js"></script>

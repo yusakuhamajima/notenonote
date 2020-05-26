@@ -18,6 +18,12 @@
 		ctx = canvas.getContext('2d');
 	}
 	function render() {
+		// background
+		ctx.fillStyle = 'lightskyblue';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		// arc
+		ctx.fillStyle = 'yellow';
 		setInterval(() => {
 			let x = Math.floor(Math.random() * canvas.width);
 			let y = Math.floor(Math.random() * canvas.height);

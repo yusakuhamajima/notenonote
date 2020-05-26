@@ -2,6 +2,10 @@ body {
 	background-color: lightskyblue;
 }
 
+h2 {
+	font-size: medium;
+}
+
 .container {
 	display: grid;
 	grid-template-rows: auto;

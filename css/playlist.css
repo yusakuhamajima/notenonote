@@ -2,10 +2,10 @@ body {
 	background-color: mediumslateblue;
 }
 
-main div blockquote {
+/* main div blockquote {
 	font-family: 'Noto Serif JP', serif;
 	color: aliceblue;
-}
+} */
 
 .container {
 	display: grid;
@@ -14,7 +14,7 @@ main div blockquote {
 	gap: 10px;
 }
 
-h2 {
+/* h2 {
 	padding: 0.1em 0.5em;
 	color: aliceblue;
 	font-size: 1.2em;
@@ -87,4 +87,4 @@ ul {
 
 .blog-nohepl {
 	padding: 0 1em;
-}
+} */
