@@ -1,14 +1,6 @@
 body {
-	/* margin: 0; */
-
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 	color: lavenderblush;
-	display: grid;
-	grid-template:
-		'header header header' 100px
-		'nav main aside' 1fr
-		'footer footer footer' 100px
-		/ 150px 1fr 180px;
 }
 
 header {
@@ -16,8 +8,7 @@ header {
 }
 
 nav {
-	grid-area: nav;
-	/* outline: solid 1px white; */
+	float: right;
 }
 
 nav li :hover {
@@ -25,21 +16,10 @@ nav li :hover {
 }
 
 main {
-	grid-area: main;
-	/* outline: solid 1px white; */
 }
 
 aside {
-	grid-area: aside;
-	/* outline: solid 1px white; */
-	padding: 1rem;
 }
 
 footer {
-	grid-area: footer;
-}
-
-footer li {
-	display: inline;
-	margin: 0.5rem;
 }
