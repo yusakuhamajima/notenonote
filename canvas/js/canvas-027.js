@@ -21,6 +21,10 @@
 
 	function render() {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		// background
+		ctx.fillStyle = 'lightyellow';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 		moveRect.drawRect();
 		window.requestAnimationFrame(render);
 	}
@@ -49,3 +53,11 @@
 		}
 	}
 })();
+
+function downloadCanvas() {
+	let canvas = document.querySelector('canvas');
+	let atag = document.createElement('a');
+	atag.href = canvas.toDataURL();
+	atag.download = 'canvas-027.png';
+	atag.click();
+}
