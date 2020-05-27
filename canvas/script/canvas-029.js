@@ -2,7 +2,7 @@
 	let canvas = null;
 	let ctx = null;
 	let movePoint = [];
-	let NUM = 100;
+	let NUM = 1000;
 
 	window.addEventListener(
 		'load',
@@ -54,3 +54,11 @@
 		return Math.random() * (max - min) + min;
 	}
 })();
+
+function downloadCanvas() {
+	let canvas = document.body.querySelector('canvas');
+	let atag = document.createElement('a');
+	atag.href = canvas.toDataURL();
+	atag.download = 'canvas-029.png';
+	atag.click();
+}

@@ -21,8 +21,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>canvas | notenonote</title>
+		<!-- <link rel="stylesheet" href="../css/main.css" /> -->
 		<link rel="stylesheet" href="./css/canvas.css" />
-		<script src="./script/contents-list.js"></script>
+		<style>
+			canvas {
+				border: 1px solid black;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -42,26 +47,18 @@
 				<!-- <script src="../js/nav_2.js"></script> -->
 			</nav>
 		</header>
-
-		<main class="container">
-			<script>
-				for (let i = 0; i < contents.length; i++) {
-					document.write('<div>');
-					document.write(`<h2>${contents[i].no}</h2>`);
-					document.write(`<a href="${contents[i].link}">`);
-					document.write(
-						`<img src="${contents[i].image}" alt="" width="100%"/>`
-					);
-					document.write('</a>');
-					document.write('</div>');
-				}
-			</script>
+		<main>
+			<h1>canvas-028</h1>
+			<div>
+				<canvas width="640px" height="335px"></canvas>
+				<script src="./script/canvas-028.js"></script>
+				<p><a href="./list.html">一覧へ</a></p>
+				<!-- download -->
+				<button onclick="downloadCanvas()">ダウンロード</button>
+			</div>
 		</main>
-		<aside>
-			<!-- <script src="../js/aside.js"></script> -->
-		</aside>
-		<footer>
-			<!-- <script src="../js/footer-nav.js"></script> -->
-		</footer>
+		<!-- <footer>
+			<script src="./js/nav.js"></script>
+		</footer> -->
 	</body>
 </html>
