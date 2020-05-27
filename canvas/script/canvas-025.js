@@ -20,7 +20,7 @@
 
 	function render() {
 		var img = new Image();
-		img.src = '../images/canvas-025-photo.png';
+		img.src = './images/canvas-025-photo.png';
 		img.onload = function () {
 			ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 

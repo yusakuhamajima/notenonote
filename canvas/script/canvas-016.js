@@ -27,6 +27,11 @@
 	}
 
 	function drawMaru(x, y, radius, startRadian, endRadian) {
+		// background
+		ctx.fillStyle = '#666';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		// arc
 		ctx.beginPath();
 		ctx.globalAlpha = 0.5;
 		ctx.arc(x, y, radius, startRadian, endRadian, false);

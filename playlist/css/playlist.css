@@ -1,5 +1,18 @@
 body {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 	background-color: mediumslateblue;
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	float: right;
+}
+
+nav li :hover {
+	color: lightgoldenrodyellow;
 }
 
 .container {
