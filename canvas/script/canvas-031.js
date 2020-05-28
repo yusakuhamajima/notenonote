@@ -37,3 +37,11 @@
 		});
 	}
 })();
+
+function downloadCanvas() {
+	let canvas = document.body.querySelector('canvas');
+	let atag = document.createElement('a');
+	atag.href = canvas.toDataURL();
+	atag.download = 'canvas-031.png';
+	atag.click();
+}
