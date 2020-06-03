@@ -6,23 +6,22 @@
 			(function (w, d, s, l, i) {
 				w[l] = w[l] || [];
 				w[l].push({
-					"gtm.start": new Date().getTime(),
-					event: "gtm.js",
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js',
 				});
 				var f = d.getElementsByTagName(s)[0],
 					j = d.createElement(s),
-					dl = l != "dataLayer" ? "&l=" + l : "";
+					dl = l != 'dataLayer' ? '&l=' + l : '';
 				j.async = true;
-				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
 				f.parentNode.insertBefore(j, f);
-			})(window, document, "script", "dataLayer", "GTM-TRB39DD");
+			})(window, document, 'script', 'dataLayer', 'GTM-TRB39DD');
 		</script>
 		<!-- End Google Tag Manager -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>15weeks2020 | notenonote</title>
-		<link rel="stylesheet" href="../../css/main.css" />
-		<link rel="stylesheet" href="../../css/playlist.css" />
+		<link rel="stylesheet" href="../css/playlist.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Serif+JP:wght@500&display=swap"
 			rel="stylesheet"
@@ -40,68 +39,45 @@
 			></iframe
 		></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<header>
-			<h1>notenonote</h1>
-			<nav>
-				<script src="../../js/nav_3.js"></script>
-			</nav>
-		</header>
-		<main>
-			<h1>playlist / 2020 /</h1>
-			<h2>15weeks</h2>
-			<img src="../../images/15weeks2020.png" alt="" width="640" height="335" />
-			<h3>New</h3>
-			<div class="playlist-comment">
-				<p>毎週作っているプレイリスト。</p>
-				<p>
-					今回はいつもよりも冒険してみました。海外で割と有名な人が多いのではないかと思う。
-				</p>
-			</div>
-			<div class="list">
-				<script src="../data/archive_list_2020.js"></script>
-				<script>
-					document.write("<ul>");
 
-					var plylsweeks = playlists[14];
-					for (let i = 0; i < plylsweeks["tracks"].length; i++) {
-						var num = i + 1;
-						document.write(
-							"<li>" +
-								num +
-								". " +
-								plylsweeks["tracks"][i]["title"] +
-								" | " +
-								plylsweeks["tracks"][i]["artist"] +
-								"</li>"
-						);
-					}
+		<div class="list">
+			<script src="../data/archive_list_2020.js"></script>
+			<script src="../data/playlistsContents.js"></script>
+			<script>
+				// ここに集番号を入れる↓
+				let weeknumber = 15;
+				// ここに集番号を入れる↑
 
-					document.write("</ul>");
-				</script>
-			</div>
+				console.log(playlistsContents[0]);
 
-			<!-- blog -->
-			<h3>blog</h3>
-			<div class="blog-nohepl">
-				<p>
-					<a href="https://nohepl.netlify.com/2020/04/11/15weeks2020/"
-						>nohepl.blog</a
-					>
-				</p>
-			</div>
-			<!-- /blog -->
+				document.write(`<h1>${weeknumber}weeks2020</h1>`);
+				document.write(
+					`<img src="${
+						playlistsContents[weeknumber - 1]['img']
+					}" alt="" width="640" height="335" />`
+				);
 
-			<!-- weekly playlist -->
-			<div class="weekly-playlist-nav">
-				<h3>weekly playlist</h3>
-				<nav>
-					<script src="../../js/weekly-playlist-nav.js"></script>
-				</nav>
-			</div>
-			<!-- /weekly playlist -->
-		</main>
-		<footer>
-			<script src="../../js/footer-nav.js"></script>
-		</footer>
+				var plylsweeks = playlists[weeknumber - 1];
+				console.log(plylsweeks);
+
+				document.write('<h1>Variable</h1>');
+				document.write('<ul>');
+
+				for (let i = 0; i < plylsweeks['tracks'].length; i++) {
+					var num = i + 1;
+					document.write(
+						'<li>' +
+							num +
+							'. ' +
+							plylsweeks['tracks'][i]['title'] +
+							' | ' +
+							plylsweeks['tracks'][i]['artist'] +
+							'</li>'
+					);
+				}
+
+				document.write('</ul>');
+			</script>
+		</div>
 	</body>
 </html>

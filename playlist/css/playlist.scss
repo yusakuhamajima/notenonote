@@ -1,0 +1,31 @@
+$main-text-color: white;
+
+body {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	background-color: mediumslateblue;
+}
+
+header {
+	grid-area: header;
+	color: $main-text-color;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.list {
+	color: $main-text-color;
+	h1 {
+		font-size: 1.2em;
+	}
+	ul {
+		list-style: none;
+	}
+	li {
+		font-size: 0.9em;
+	}
+}

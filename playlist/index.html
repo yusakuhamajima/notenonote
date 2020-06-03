@@ -26,7 +26,7 @@
 			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./data/playlists.js"></script>
+		<script src="./data/playlistsContents.js"></script>
 	</head>
 
 	<body>
@@ -43,17 +43,14 @@
 		<header>
 			<h1>playlist @notenonote</h1>
 		</header>
-		<nav>
-			<script src="../js/nav_2.js"></script>
-		</nav>
 		<main class="container">
 			<script>
-				for (let i = 0; i < 20; i++) {
+				for (let i = 9; i < 22; i++) {
 					document.write('<div>');
-					document.write(`<h3>${playlists[i].weeks}weeks</h3>`);
-					document.write(`<a href="${playlists[i].url}">`);
+					document.write(`<h3>${playlistsContents[i].weeks}weeks</h3>`);
+					document.write(`<a href="${playlistsContents[i].url}">`);
 					document.write(
-						`<img src="../images/${playlists[i].weeks}weeks2020.png" alt="" width="100%"/>`
+						`<img src="../images/${playlistsContents[i].weeks}weeks2020.png" alt="" width="100%"/>`
 					);
 					document.write('</a>');
 					document.write('</div>');
@@ -72,11 +69,5 @@
 				/></a>
 			</div>
 		</main>
-		<aside>
-			<!-- <script src="../js/aside.js"></script> -->
-		</aside>
-		<footer>
-			<!-- <script src="../js/footer-nav.js"></script> -->
-		</footer>
 	</body>
 </html>

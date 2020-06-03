@@ -1,27 +1,36 @@
 body {
-	font-family: 'M PLUS Rounded 1c', sans-serif;
-	background-color: mediumslateblue;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: mediumslateblue;
 }
 
 header {
-	grid-area: header;
-}
-
-nav {
-	float: right;
-}
-
-nav li :hover {
-	color: lightgoldenrodyellow;
+  grid-area: header;
+  color: white;
 }
 
 .container {
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
-h1 {
-	font-size: small;
+.list {
+  color: white;
 }
+
+.list h1 {
+  font-size: 1.2em;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list li {
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=playlist.css.map */
