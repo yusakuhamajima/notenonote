@@ -1,5 +1,10 @@
 var contents = [
 	{
+		no: 33,
+		link: './canvas-033.html',
+		image: './images/canvas-033.png',
+	},
+	{
 		no: 32,
 		link: './canvas-032.html',
 		image: './images/canvas-032.png',

@@ -6,11 +6,6 @@
 	let velX = 5;
 	let velY = 1;
 	let graY = 1;
-	let forceX;
-	let forceY;
-	let acceleration;
-	let mass;
-	let friction;
 
 	window.addEventListener('load', () => {
 		initialize();
@@ -35,8 +30,10 @@
 		locY = locY + velY;
 		drawArc(locX, locY);
 
-		if (locY > canvas.height) {
+		if (locY < 0 || locY > canvas.height) {
 			velY = velY * -1;
+		} else if (locX < 0 || locX > canvas.width) {
+			velX = velX * -1;
 		}
 
 		window.requestAnimationFrame(render);
@@ -49,3 +46,11 @@
 		ctx.fill();
 	}
 })();
+
+function downloadCanvas() {
+	let canvas = document.body.querySelector('canvas');
+	let atag = document.createElement('a');
+	atag.href = canvas.toDataURL();
+	atag.download = 'canvas-033.png';
+	atag.click();
+}
