@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>jsbeat</title>
+		<script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+	</head>
+	<body>
+		<div onclick="init()">start</div>
+
+		<script>
+			function init() {
+				WebMidi.enable(function (err) {
+					if (err) {
+						console.log('there was an error', err);
+					}
+					console.log(WebMidi.outputs);
+
+					WebMidi.outputs.forEach(function (output) {
+						if (output.name == 'IAC Driver Bus 1');
+						window.output = output;
+					});
+				}, true);
+			}
+
+			function startLoop() {
+				setInterval(function () {
+					output.playNote('C2', 1, { duration: 500, velocity: 0.5 });
+				}, 1000);
+			}
+		</script>
+	</body>
+</html>

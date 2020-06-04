@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web MIDI API</title>
+	</head>
+	<body>
+		<canvas></canvas>
+		<br />
+		<button onclick="downloadCanvas()">download</button>
+		<script>
+			(() => {
+				let canvas = null;
+				let ctx = null;
+
+				window.addEventListener(
+					'load',
+					() => {
+						initialize();
+						render();
+					},
+					false
+				);
+
+				function initialize() {
+					canvas = document.body.querySelector('canvas');
+					canvas.width = 640;
+					canvas.height = 335;
+					ctx = canvas.getContext('2d');
+				}
+
+				function render() {
+					// bg
+					ctx.fillStyle = 'midnightblue';
+					ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+					// line
+					ctx.strokeStyle = 'plum';
+					ctx.beginPath();
+					ctx.moveTo(180, canvas.height / 2 + 10);
+					ctx.lineTo(465, canvas.height / 2 + 10);
+					ctx.stroke();
+
+					// text
+					ctx.fillStyle = 'lightgoldenrodyellow';
+					ctx.font = '45px Avenir';
+					ctx.textAlign = 'center';
+					ctx.fillText('Web MIDI API', canvas.width / 2, canvas.height / 2);
+				}
+			})();
+
+			function downloadCanvas() {
+				let canvas = document.body.querySelector('canvas');
+				let atag = document.createElement('a');
+				atag.href = canvas.toDataURL();
+				atag.download = 'webmidiapi.png';
+				atag.click();
+				console.log('ok');
+			}
+		</script>
+	</body>
+</html>
