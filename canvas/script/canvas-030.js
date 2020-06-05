@@ -2,7 +2,7 @@
 	let canvas = null;
 	let ctx = null;
 	let movePoint = [];
-	let NUM = 200;
+	let NUM = 500;
 
 	window.addEventListener(
 		'load',
@@ -46,8 +46,8 @@
 			ctx.arc(this.x, this.y, this.w, 0, Math.PI * 2, false);
 			ctx.fillStyle = 'crimson';
 			ctx.fill();
-			this.x = this.x + getRandomArbitrary(-1, 1);
-			this.y = this.y + getRandomArbitrary(-1, 1);
+			this.x = this.x + getRandomArbitrary(-2, 2);
+			this.y = this.y + getRandomArbitrary(-2, 2);
 			// this.w = getRandomArbitrary(2, 10);
 		}
 	}
