@@ -45,8 +45,8 @@
 			ctx.arc(this.x, this.y, 2, 0, Math.PI * 2, false);
 			ctx.fillStyle = 'blue';
 			ctx.fill();
-			this.x = this.x + getRandomArbitrary(-1, 1);
-			this.y = this.y + getRandomArbitrary(-1, 1);
+			this.x = this.x + getRandomArbitrary(-2, 2);
+			this.y = this.y + getRandomArbitrary(-2, 2);
 		}
 	}
 
