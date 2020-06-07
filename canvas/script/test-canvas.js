@@ -1,51 +1,43 @@
-(() => {
-	let canvas = null;
-	let ctx = null;
-	let locX = 0;
-	let locY = 0;
-	let velX = 5;
-	let velY = 1;
-	let graY = 1;
-	let forceX;
-	let forceY;
-	let acceleration;
-	let mass;
-	let friction;
+let canvas = document.body.querySelector('canvas');
+let ctx = canvas.getContext('2d');
 
-	window.addEventListener('load', () => {
-		initialize();
-		render();
-	});
+let isDrawing = false;
+let x = 0;
+let y = 0;
 
-	function initialize() {
-		canvas = document.body.querySelector('canvas');
-		canvas.width = 640;
-		canvas.height = 335;
-		ctx = canvas.getContext('2d');
+// ctx.fillStyle = 'red';
+// ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+// mousedown, mousemove, mouseup にイベントリスナーを追加
+canvas.addEventListener('mousedown', (e) => {
+	x = e.offsetX;
+	y = e.offsetY;
+	isDrawing = true;
+});
+
+canvas.addEventListener('mousemove', (e) => {
+	if (isDrawing === true) {
+		drawLine(ctx, x, y, e.offsetX, e.offsetY);
+		x = e.offsetX;
+		y = e.offsetY;
 	}
+});
 
-	function render() {
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-		ctx.fillStyle = 'crimson';
-		ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-		velY = velY + graY;
-		locX = locX + velX;
-		locY = locY + velY;
-		drawArc(locX, locY);
-
-		if (locY > canvas.height) {
-			velY = velY * -1;
-		}
-
-		window.requestAnimationFrame(render);
+window.addEventListener('mouseup', (e) => {
+	if (isDrawing === true) {
+		drawLine(ctx, x, y, e.offsetX, e.offsetY);
+		x = 0;
+		y = 0;
+		isDrawing = false;
 	}
+});
 
-	function drawArc(x, y) {
-		ctx.beginPath();
-		ctx.arc(locX, locY, 10, 0, Math.PI * 2, false);
-		ctx.fillStyle = 'blue';
-		ctx.fill();
-	}
-})();
+function drawLine(ctx, x1, y1, x2, y2) {
+	ctx.beginPath();
+	ctx.strokeStyle = 'black';
+	ctx.lineWidth = 1;
+	ctx.moveTo(x1, y1);
+	ctx.lineTo(x2, y2);
+	ctx.stroke();
+	ctx.closePath();
+}

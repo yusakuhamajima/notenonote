@@ -1,8 +1,7 @@
 (() => {
 	let canvas = null;
 	let ctx = null;
-	let movePoint = [];
-	let NUM = 200;
+	let rect, x, y;
 
 	window.addEventListener(
 		'load',
@@ -26,10 +25,12 @@
 			ctx.fillStyle = 'lightslategrey';
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-			var rect = e.target.getBoundingClientRect();
-			var x = e.clientX - rect.left;
-			var y = e.clientY - rect.top;
-			console.log(`${x}:${y}`);
+			console.log(e);
+			console.log(e.target);
+
+			rect = e.target.getBoundingClientRect();
+			x = e.clientX - rect.left;
+			y = e.clientY - rect.top;
 
 			// rect
 			ctx.fillStyle = 'limegreen';
