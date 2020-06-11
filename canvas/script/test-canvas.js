@@ -1,43 +1,48 @@
-let canvas = document.body.querySelector('canvas');
-let ctx = canvas.getContext('2d');
+(() => {
+	let canvas = null;
+	let ctx = null;
+	let getRect;
 
-let isDrawing = false;
-let x = 0;
-let y = 0;
+	window.addEventListener(
+		'load',
+		() => {
+			initialize();
+			render();
+		},
+		false
+	);
 
-// ctx.fillStyle = 'red';
-// ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-// mousedown, mousemove, mouseup にイベントリスナーを追加
-canvas.addEventListener('mousedown', (e) => {
-	x = e.offsetX;
-	y = e.offsetY;
-	isDrawing = true;
-});
-
-canvas.addEventListener('mousemove', (e) => {
-	if (isDrawing === true) {
-		drawLine(ctx, x, y, e.offsetX, e.offsetY);
-		x = e.offsetX;
-		y = e.offsetY;
+	function initialize() {
+		canvas = document.body.querySelector('canvas');
+		canvas.width = 640;
+		canvas.height = 335;
+		ctx = canvas.getContext('2d');
 	}
-});
 
-window.addEventListener('mouseup', (e) => {
-	if (isDrawing === true) {
-		drawLine(ctx, x, y, e.offsetX, e.offsetY);
-		x = 0;
-		y = 0;
-		isDrawing = false;
+	function render() {
+		let Rect = function (x, y, w) {
+			this.x = x;
+			this.y = y;
+			this.radius = w;
+			// this.createRect = function () {
+			// 	return ctx.fillRect(this.x, this.y, this.radius, this.radius);
+			// };
+		};
+
+		Rect.prototype.createRect = function () {
+			return ctx.fillRect(this.x, this.y, this.radius, this.radius);
+		};
+
+		let colors = ['red', 'blue', 'yellow', 'green', 'orange'];
+
+		for (let j = 0; j < canvas.height; j++) {
+			for (let i = 0; i < canvas.width; i++) {
+				getRect = new Rect(i * 10, j * 10, 6);
+				ctx.fillStyle = colors[Math.floor(Math.random(-1, 1) * 10)];
+				getRect.createRect();
+			}
+		}
+
+		console.log(Math.floor(Math.random(-1, 1) * 10));
 	}
-});
-
-function drawLine(ctx, x1, y1, x2, y2) {
-	ctx.beginPath();
-	ctx.strokeStyle = 'black';
-	ctx.lineWidth = 1;
-	ctx.moveTo(x1, y1);
-	ctx.lineTo(x2, y2);
-	ctx.stroke();
-	ctx.closePath();
-}
+})();
