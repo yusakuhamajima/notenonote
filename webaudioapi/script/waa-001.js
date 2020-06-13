@@ -6,8 +6,6 @@ function playSound() {
 
 	// オシレータを作成
 	osc = ctx.createOscillator();
-	// オシレータは↓こちら↓でも動くみたい
-	// osc = new OscillatorNode(ctx);
 
 	// オシレータを出力に接続
 	osc.connect(ctx.destination);
