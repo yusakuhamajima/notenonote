@@ -11,6 +11,14 @@ nav li :hover {
 	color: lightgoldenrodyellow;
 }
 
+main ul {
+	margin-top: 0;
+}
+
+main li {
+	font-size: small;
+}
+
 h1 {
 	font-size: small;
 }

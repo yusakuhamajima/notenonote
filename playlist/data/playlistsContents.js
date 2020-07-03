@@ -114,4 +114,9 @@ var playlistsContents = [
 		url: './2020/23weeks2020.html',
 		img: '../../images/23weeks2020.png',
 	},
+	{
+		weeks: 24,
+		url: './2020/24weeks2020.html',
+		img: '../../images/24weeks2020.png',
+	},
 ];

@@ -1,24 +1,24 @@
-var w_canvas, h_canvas;
-w_canvas = 640;
-h_canvas = 335;
-var x = 0;
-var d = -1;
+let mic;
 
 function setup() {
-	createCanvas(w_canvas, h_canvas);
+	let canvas = createCanvas(640, 335, P2D);
+	canvas.parent('myContainer');
+
+	colorMode(HSB, 360, 100, 100, 100);
+	noStroke();
+
+	mic = new p5.AudioIn();
+	mic.start();
 }
 
 function draw() {
-	background(220);
-	ellipse(x, 50, 80, 80);
-	x = x + 10 * d;
-	if (x < 0 || x > w_canvas) {
-		d = d * -1;
-	}
-}
+	background(0, 0, 100, 100);
 
-function keyPressed() {
-	if (key === 's') {
-		saveCanvas('p5js-001', 'png');
-	}
+	micLevel = mic.getLevel();
+	console.log(micLevel);
+
+	let y = height - micLevel * height * 10;
+	// let y = 100;
+	fill(343, 85, 92, 100);
+	rect(width / 2, y, 10, height);
 }

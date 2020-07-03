@@ -53,6 +53,10 @@
 						`<img src="${contents[i].image}" alt="" width="100%"/>`
 					);
 					document.write('</a>');
+					document.write('<ul>');
+					document.write(`<li>${contents[i].title}</li>`);
+					document.write(`<li><a href="${contents[i].note}">note</a></li>`);
+					document.write('</ul>');
 					document.write('</div>');
 				}
 			</script>

@@ -1,0 +1,9 @@
+body {
+	background-color: crimson;
+}
+
+canvas {
+	border: 1px solid white;
+	width: 640px;
+	height: 335px;
+}

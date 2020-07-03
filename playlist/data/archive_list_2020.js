@@ -459,8 +459,56 @@ var playlists = [
 	{
 		weeks: 23,
 		tracks: [
-			{ title: 'aaa', artist: 'aaa' },
-			{ title: 'aaa', artist: 'aaa' },
+			{ title: '誰にも言わない', artist: '宇多田ヒカル' },
+			{ title: 'STEP IN TIME', artist: 'YeYe' },
+			{ title: 'FTLOG', artist: 'Jasper Tygner' },
+			{ title: '24/7', artist: 'Euføeni' },
+			{ title: 'Living in the city', artist: 'SCANDAL' },
+			{
+				title: 'このまま夢で(feat.AAAMYYY)[Home Session]',
+				artist: 'Shin Sakiura',
+			},
+			{
+				title: "Don't Believe Your Love",
+				artist: 'Gigandect',
+			},
+			{ title: 'Aries', artist: 'Dye O' },
+			{ title: 'All In', artist: 'DJ Q, Gaidaa & tofubeats' },
+			{
+				title: 'My Friend the Sun(Digitalism Sound.Wav Remix)',
+				artist: 'Luttrell',
+			},
+			{
+				title: "So We Won't Forget",
+				artist: 'Khruangbin',
+			},
+			{ title: 'About Us', artist: 'Holy Models' },
+			{ title: 'In Your Eyes(Remix)[feat.Doja Cat]', artist: 'The Weekend' },
+			{
+				title: 'Resynthesis 3D(Binaural Version - Headphones Only)',
+				artist: 'Max Cooper',
+			},
+		],
+	},
+	{
+		weeks: 24,
+		tracks: [
+			{
+				title: 'Keep It Moving(feat.BSC, IO, Young Juju & Mr.K)',
+				artist: 'Neetz',
+			},
+			{ title: 'pay attention!', artist: 'underscores' },
+			{ title: 'Past Present(feat.Asutenki)', artist: 'NxxxxxS' },
+			{
+				title: '透明人間・オン・ザ・ビーチ',
+				artist: 'ぷにぷに電機 & PARKGOLF',
+			},
+			{ title: 'River, River', artist: 'Lifeformed & Janice Kwan' },
+			{ title: 'Warm Day of Winter', artist: 'Auto & mst' },
+			{ title: 'Ghost Dancer', artist: 'DJ MOTIVE' },
+			{ title: 'Aldi', artist: 'Ahwlee & Chill Children' },
+			{ title: 'no song without you', artist: 'HONNE' },
+			{ title: 'Mother Earth', artist: 'BenAddict, Philanthrope & Plusma' },
 		],
 	},
 ];

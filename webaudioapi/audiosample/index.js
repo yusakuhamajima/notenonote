@@ -98,6 +98,7 @@ addEventListener('click', async () => {
 	]);
 
 	const timeDomainArray = new Float32Array(analyzer.fftSize);
+	console.log(timeDomainArray);
 	const frequencyArray = new Float32Array(analyzer.frequencyBinCount);
 	const timeDomainVbo = createVbo(gl, timeDomainArray, gl.DYNAMIC_DRAW);
 	const frequencyVbo = createVbo(gl, frequencyArray, gl.DYNAMIC_DRAW);
