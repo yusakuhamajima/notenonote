@@ -11,9 +11,9 @@
 			function gtag() {
 				dataLayer.push(arguments);
 			}
-			gtag("js", new Date());
+			gtag('js', new Date());
 
-			gtag("config", "UA-76272601-12");
+			gtag('config', 'UA-76272601-12');
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,34 +31,30 @@
 			<h1>javascript @notenonote</h1>
 		</header>
 		<main>
-			<h1>003 - aaa</h1>
+			<h1>003 - indexOf</h1>
 			<div>
 				<p id="js002"></p>
 			</div>
-			<!-- <script>
-				let newParag = document.createElement("p");
-				newParag.textContent = "タグを生成する";
-				document.getElementById("js002").appendChild(newParag);
-			</script> -->
-			<pre class="prettyprint lang-js">
-                let
-            </pre
-			>
-			<div>
-				<p id="test">↓以下、練習ゾーン</p>
-				<script>
-					let newTest = document.getElementById("test");
-					newTest.textContent = "文章を入れる";
-				</script>
-			</div>
+			<ul>
+				<li>indexOfは、「'」を含まない</li>
+				<li>
+					最初の文字（配列なら最初ワード）は、「0」になる。「0」から勘定する
+				</li>
+			</ul>
+
+			<script>
+				let str = 'あいうえお、かきくけこ、さしすせそ';
+
+				let result = str.indexOf('かきく');
+				console.log(result);
+
+				let result1 = str.indexOf('かきく', 7);
+				console.log(result1);
+
+				let ary = ['あいうえお', 'かきくけこ', 'さしすせそ'];
+				let result3 = ary.indexOf('かきくけこ');
+				console.log(result3);
+			</script>
 		</main>
-		<footer>
-			<div>
-				<script src="../js/nav_2.js"></script>
-			</div>
-			<div>
-				<script src="../js/footer-nav.js"></script>
-			</div>
-		</footer>
 	</body>
 </html>

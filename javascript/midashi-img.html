@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>js-midashi-img</title>
+		<style>
+			canvas {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas></canvas>
+		<br />
+		<button onclick="downloadCanvas()">download</button>
+		<script>
+			let canvas = document.querySelector('canvas');
+			canvas.width = 640;
+			canvas.height = 335;
+			let ctx = canvas.getContext('2d');
+
+			ctx.fillStyle = '#1E99D7';
+			ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+			ctx.fillStyle = 'white';
+			ctx.textAlign = 'center';
+			ctx.textBaseline = 'middle';
+			ctx.font = '48px serif';
+			ctx.fillText('JavaScript 001', canvas.width / 2, canvas.height / 2);
+
+			function downloadCanvas() {
+				let canvas = document.querySelector('canvas');
+				let atag = document.createElement('a');
+				atag.href = canvas.toDataURL();
+				atag.download = 'javascript-001.png';
+				atag.click();
+			}
+		</script>
+	</body>
+</html>

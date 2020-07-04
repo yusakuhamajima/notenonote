@@ -11,9 +11,9 @@
 			function gtag() {
 				dataLayer.push(arguments);
 			}
-			gtag("js", new Date());
+			gtag('js', new Date());
 
-			gtag("config", "UA-76272601-12");
+			gtag('config', 'UA-76272601-12');
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,12 +32,10 @@
 		</header>
 		<main>
 			<h1>001 - getElementsByID (& prettify)</h1>
-			<div>
-				<p id="test"></p>
-			</div>
+			<p id="test"></p>
 			<script>
-				let newParag = document.getElementById("test");
-				newParag.innerText = "テキストを入れる";
+				let newParag = document.getElementById('test');
+				newParag.innerText = 'テキストを入れる';
 			</script>
 			<div>
 				<pre class="prettyprint lang-js">
