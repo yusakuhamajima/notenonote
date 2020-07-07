@@ -18,7 +18,6 @@ function draw() {
 	console.log(micLevel);
 
 	let y = height - micLevel * height * 10;
-	// let y = 100;
 	fill(343, 85, 92, 100);
 	rect(width / 2, y, 10, height);
 }
