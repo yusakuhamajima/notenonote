@@ -1,8 +1,10 @@
 function setup() {
 	let canvas = createCanvas(640, 335, P2D);
 	canvas.parent('canvas');
+
 	background(255);
 	stroke(1);
+
 	let step = 10;
 	let noiseScale = 0.01;
 	for (let j = 0; j < height; j += step) {

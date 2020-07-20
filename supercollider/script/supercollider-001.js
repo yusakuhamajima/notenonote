@@ -5,16 +5,12 @@ function setup() {
 	canvas.parent('canvas');
 
 	colorMode(HSB, 360, 100, 100, 100);
+
 	background(198, 54, 30, 100);
-	stroke(70, 42, 96, 100);
-
-	h = 0.0;
-
-	for (let i = 0; i < width; i++) {
-		h = h + 0.02;
-		y = noise(h) * height;
-		point(i, y);
-	}
+	noStroke();
+	textAlign(CENTER, CENTER);
+	textSize(40);
+	text('SuperCollider', width / 2, height / 2);
 }
 
 // function draw() {}
